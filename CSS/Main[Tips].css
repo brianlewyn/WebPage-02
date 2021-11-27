@@ -1,0 +1,25 @@
+section.Advice {
+   /* background: red; */
+   padding: 5rem 5rem 0;
+}
+
+.Advice__Text {
+   padding: 5rem 0;
+}
+.Advice__Text b,
+.Advice__Text a {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 1.8rem;
+   margin-bottom: 0.8rem;
+}
+.Advice__Text ul,
+.Advice__Text ol {
+   font-size: 2.5rem;
+   margin-left: 3rem;
+}
+
+#Apps {
+   position: relative;
+   top: calc(-1 * var(--Vh));
+}

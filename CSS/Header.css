@@ -1,0 +1,120 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', Arial, sans-serif;
+   font-size: 62.5%; /* [62.5%] == [10px] */
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+:root {
+   /* [VL= Very Light], [L= Light], [D = Dark], [VD = Very Dark] */
+   
+   --Black1: hsl(0, 0%, 10%);
+	--Black2: hsl(0, 0%, 12%);
+	--Black3: hsl(0, 0%, 14%);
+
+	--White1: hsl(0, 0%, 100%);
+	---Backgroud: hsl(0, 0%, 96%);
+
+   --Backgroud: hsl(0, 0%, 96%);
+   --Purple-VL: hsla(270, 100%, 80%, 100%);
+   --Purple-L: hsla(305, 100%, 70%, 90%);
+   --D-Purple: hsla(270, 85%, 60%, 100%);
+   --VD-Purple: hsla(250, 90%, 40%, 90%);
+   
+   --Link: hsl(250, 90%, 40%);
+   --TextGrey: hsl(0, 0%, 30%);
+   
+   --Vh: 5.5rem;
+   --Vw: calc(100vw - 1rem);
+}
+
+
+
+/* ==== Scrollbar ==== */
+::-webkit-scrollbar {
+	width: 1rem;
+}
+::-webkit-scrollbar-track {
+	background: hsl(0, 0%, 32%);
+}
+::-webkit-scrollbar-thumb {
+	background: hsl(190, 100%, 60%);
+}
+
+/* ========== ParticlesJS ========== */
+body {
+   background: var(--Backgroud);
+}
+#particles-js {
+   height: calc(100vh - var(--Vh));
+   width: 100%;
+   position: fixed;
+   z-index: -1;
+}
+
+
+/* ========== Navigation ========== */
+header.Nav {
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 5.5rem;
+   width: var(--Vw);
+   display: flex;
+	align-items: center;
+	justify-content: space-between;
+   background: var(--Backgroud);
+   z-index: 500;
+
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+   -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+
+
+/* [+] */
+.Nav__Logo {
+   height: 100%;
+	display: flex;
+	align-items: center;
+	margin-left: 3rem;
+	text-decoration: none;
+}
+.Logo-SVG {
+   width: 4.2rem;
+}
+.Page-Title {
+   font-family: 'Fredoka One', 'Poppins';
+	font-size: 2.6rem;
+	color: var(--Black1);
+	margin-left: 0.5rem;
+}
+
+
+/* [+] */
+.Nav__Links {
+   display: flex;
+   width: 30rem;
+   justify-content: space-between;
+   list-style: none;
+   margin-right: 4rem;
+}
+.Nav__Links a {
+   font-size: 2rem;
+   font-weight: 400;
+   color: var(--Black2);
+   text-decoration: none;
+}
+/* .Nav__Links a:hover, */
+a.Active-Home,
+.Nav__Links a:hover {
+   color: var(--Link);
+   border-bottom: 2px solid var(--VD-Purple);
+}

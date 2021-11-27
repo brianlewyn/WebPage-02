@@ -1,0 +1,14 @@
+<svg width="1076" height="826" viewBox="0 0 1076 826" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0V826H614H1076C1076 826 851.705 771.283 814 696C789.504 647.09 812.25 607.972 790 558C765.187 502.273 606.912 544.535 584 488C551.975 408.98 600 376 574 316C541.067 240 330.896 332.691 382 144C408 48 0 0 0 0Z" fill="url(#WaveLight)"/>
+<path d="M0 29V826H589.463H1033C1033 826 817.668 773.204 781.47 700.564C757.953 653.371 779.79 615.627 758.429 567.409C734.608 513.639 582.658 554.417 560.662 499.867C529.917 423.621 576.022 391.799 551.061 333.906C519.444 260.574 317.672 350.011 366.734 167.944C391.695 75.3148 0 29 0 29Z" fill="url(#DarkWave)"/>
+<defs>
+<linearGradient id="WaveLight" x1="505" y1="-1.60799e-07" x2="505" y2="826" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CC99FF"/>
+<stop offset="1" stop-color="#99FFFF"/>
+</linearGradient>
+<linearGradient id="DarkWave" x1="484.819" y1="29" x2="484.819" y2="826" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7000FF"/>
+<stop offset="1" stop-color="#00F0FF"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,11 @@
+/* ========= [Intro] ======== */
+#Conclusion {
+   position: relative;
+   top: calc(-1 * var(--Vh));
+}
+section.Concl {
+   height: auto;
+   width: var(--Vw);
+   padding: 5rem;
+   /* background: red; */
+}
