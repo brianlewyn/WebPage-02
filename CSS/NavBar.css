@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  /* [62.5] == [10px] */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==== Scrollbar ==== */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #525252;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #33ddff;
+}
+
+/* ========== ParticlesJS ========== */
+body {
+  background: whitesmoke;
+}
+
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+/* ========== Navigation ========== */
+header.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5.5rem;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: whitesmoke;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  z-index: 500;
+}
+
+/* [+] */
+.NavBar__Logo {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
+
+.Logo-SVG {
+  width: 4.2rem;
+}
+
+.Page-Title {
+  font-family: 'Fredoka One', 'Poppins';
+  font-size: 2.6rem;
+  color: #1a1a1a;
+  margin-left: 0.5rem;
+}
+
+/* [+] */
+.NavBar__Links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+.NavBar__Links a {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+a.Active-Home,
+.NavBar__Links a:hover {
+  color: #290ac2;
+  border-bottom: 2px solid #290ac2;
+}
+/*# sourceMappingURL=NavBar.css.map */
