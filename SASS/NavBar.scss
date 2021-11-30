@@ -1,27 +1,44 @@
-// Variables [Text]
-$Primary-Color: hsl(0, 0%, 10%);
-$Secondary-Color: hsl(0, 0%, 12%);
-$Terciary-Color: hsl(0, 0%, 12%);
-$Quaternary-Color: hsl(0, 0%, 12%);
+// [Sass]:[Text]:[Config-Main]
+// $Primary-Color: hsl(0, 0%, 10%);
+// $Secondary-Color: hsl(0, 0%, 12%);
+// $Terciary-Color: hsl(0, 0%, 14%);
+// $Quaternary-Color: hsl(0, 0%, 16%);
 $Link: hsl(250, 90%, 40%);
 
-// Variables [Color] → [VL= Very Light]; [L= Light]; [D = Dark]; [VD = Very Dark];
-$Background: hsl(0, 0%, 96%);
+// [Sass]:[Text]:[DarkMode]
+$Primary-Color: hsl(0, 0%, 90%);
+$Secondary-Color: hsl(0, 0%, 88%);
+$Terciary-Color: hsl(0, 0%, 86%);
+$Quaternary-Color: hsl(0, 0%, 84%);
+// $Link: hsl(250, 90%, 40%);
+
+
+// [Sass]:[Color]:[Config-Main]
+// [Very Light, Light, Dark, Very Dark];
+// $Background: hsl(0, 0%, 96%);
 $Purple-VL: hsla(270, 100%, 80%, 100%);
 $Purple-L: hsla(305, 100%, 70%, 90%);
 $D-Purple: hsla(270, 85%, 60%, 100%);
 $VD-Purple: hsla(250, 90%, 40%, 90%);
 
-// Variables [Unit and size]
-$UT: 1rem;
-$Vh: 5.5rem;
+// [Sass]:[Color]:[DarkMode]
+$Background: linear-gradient(
+   to top left, 
+   hsl(0, 0%, 10%) 0%,
+   hsl(0, 0%, 10%) 100% );
+
+// Variables (SASS) [Unit and size]
+$Unit: 1rem;
+$NavBar: 5.5rem;
+$Vh: calc(100vh - $NavBar);
 $Vw: 100%;
 
 // Functions (SASS)
-@function Size($x) {
-   @return $x * $UT;
+@function size($x) {
+   @return $x * $Unit;
 }
 
+/* ================== CSS ================== */
 * {
    margin: 0;
    padding: 0;
@@ -47,23 +64,35 @@ html {
 
 /* ========== ParticlesJS ========== */
 body {
+   display: flex;
+   justify-content: center;
    background: $Background;
 }
 #particles-js {
    height: 100vh;
-   width: 100%;
+   width: 100vw;
    position: fixed;
    z-index: -1;
 }
 
+
+/* ========== Grid-Container ========== */
+.Grid-Container {
+   position: relative;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   flex-direction: column;
+   max-width: 1200px;
+}
+
 /* ========== Navigation ========== */
 header.NavBar {
-   position: fixed;
+   position: relative;
    top: 0;
    left: 0;
-   height: $Vh;
-   width: $Vw;
-   max-width: 1400px;
+   height: $NavBar;
+   width: 100%;
    padding: 0 3.5rem;
    display: flex;
 	align-items: center;
@@ -73,7 +102,7 @@ header.NavBar {
    z-index: 500;
 }
 
-/* [+] */
+/* header [+] */
 .NavBar__Logo {
    height: 100%;
 	display: flex;
@@ -85,27 +114,47 @@ header.NavBar {
 }
 .Page-Title {
    font-family: 'Fredoka One', 'Poppins';
-	font-size: Size(2.6);
-	color: $Primary-Color;
-	margin-left: 0.5rem;
+   font-size: size(2.6);
+   color: $Primary-Color;
+   margin-left: 0.5rem;
 }
 
-
-/* [+] */
-.NavBar__Links ul {
+/* header [+] */
+nav.NavBar__Links {
+   height: 4rem;
    display: flex;
+   align-items: center;
+}
+.NavBar__Links ul {
    width: 35rem;
+   display: flex;
    justify-content: space-between;
    list-style: none;
+
+   a {
+      font-size: size(2);
+      font-weight: 400;
+      text-decoration: none;
+      color: $Secondary-Color;
+
+      &.Active-Home,
+      &:hover {
+         color: $Link;
+         border-bottom: 2px solid $VD-Purple;
+      }
+   }
 }
-.NavBar__Links a {
-   font-size: Size(2);
-   font-weight: 400;
+
+#Hamburger {
+   display: none;
+   font-size: size(2.4);
    color: $Secondary-Color;
-   text-decoration: none;
-}
-a.Active-Home,
-.NavBar__Links a:hover {
-   color: $Link;
-   border-bottom: 2px solid $VD-Purple;
+   margin: 0.4rem;
+   padding: 0.4rem;
+   cursor: pointer;
+
+   &:hover {
+      color: $Link;
+      background: #ccc;
+   }
 }
