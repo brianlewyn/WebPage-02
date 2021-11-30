@@ -2,7 +2,6 @@
 main {
    position: relative;
    width: var(--Vw);
-   padding-top: 5.5rem;
 }
 main img {
    z-index: 10;

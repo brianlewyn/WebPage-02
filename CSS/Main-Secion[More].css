@@ -1,0 +1,15 @@
+div.Grid-Container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 50px repeat(2, 315px);
+   gap: 15px 10px;
+   padding: 5rem 0;
+}
+
+.Grid-Container h3 {
+   grid-column: 1 / span 2;
+}
+.Grid-Container iframe {
+   justify-self: center;
+   padding: 10px;
+}

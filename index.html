@@ -17,8 +17,9 @@
    <link rel="stylesheet" href="CSS/Main[Devp].css">
    <link rel="stylesheet" href="CSS/Main[Concl].css">
    <link rel="stylesheet" href="CSS/Main[Tips].css">
+   <link rel="stylesheet" href="CSS/Main-Secion[More].css">
 
-   <title>Study Web</title>
+   <title>Study Web3</title>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
 
       <!-- Links Navigation -->
       <ul class="Nav__Links">
-         <li><a href="#" class="Active-Home">Inicio</a></li>
+         <li><a href="#Home-Page">Inicio</a></li>
          <li><a href="#Links">Índice</a></li>
          <li><a href="#More">Vídeos</a></li>
          <li><a href="#About">Somos</a></li>
@@ -49,7 +50,7 @@
 
       <!-- Home-Page and Main-Content -->
       <div id="Home">
-         <div class="Home-Page">
+         <div id="Home-Page">
          <div class="Padding_Home-Objetes">
             
             <!-- The Topic -->
@@ -160,8 +161,7 @@
                   <ul class="SecondSubList">
                      <li><a href="#Apps">Apps</a></li>
                      <li><a href="#Books">Libros</a></li>
-                     <li><a href="#Videos">Vídeos</a></li>
-                     <!-- <li><a href="#Consejos">Consejos de planificación</a></li> -->
+                     <li><a href="#More">Vídeos</a></li>
                   </ul>
                </ul>
             </div>
@@ -586,15 +586,14 @@
                      </article>
                   </div>
 
-                  <div id="Videos">
+                  <div id="More">
                      <div class="Empty"></div>
-                     <div class="Background-Sp">
+                     <div class="Grid-Container Background-Sp">
                         <h3>Vídeos</h3>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/OY-2sYEQsjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/TOcxLWkd9Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <br>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Fitza6Z1VKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZGJizJsSF8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                      </div>
                   </div>
                </section>
@@ -613,19 +612,24 @@
 
    
    <!-- ===== Aside ==== -->
-   <aside id="More">
-      <h4>Aside: [Vídeos]</h4>
+   <aside>
+      <iframe src="https://open.spotify.com/embed?uri=spotify:playlist:3yAUvjuiSNv1qoMD5F3Bt5" width="350" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
    </aside>
 
    
    <!-- ===== Footer (Authors (Us) and links to Social Networks) ==== -->
    <footer>
-      <iframe src="https://open.spotify.com/embed?uri=spotify:playlist:3yAUvjuiSNv1qoMD5F3Bt5" width="350" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      <hgroup class="MoreInfo">
+			<h5>&copy; 2021 StudyWeb Brian M. M. y Hadara S. J.</h5>
+		</hgroup>
    </footer>
 
    <!-- JS Particles -->
    <script src="JS/particles.min.js"></script>
    <script src="JS/Run-Particlesjs-Settings.js"></script>
+   <script src="JS/Active-Links.js"></script>
+   <script src="JS/scrollreveal.min.js"></script>
+   <script src="JS/Scroll-Pluggin.js"></script>
    
 </body>
 
