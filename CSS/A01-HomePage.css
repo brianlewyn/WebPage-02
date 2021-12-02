@@ -1,0 +1,77 @@
+/* ========== [Home-Page] ========== */
+div.Home-Page {
+  height: 100vh;
+  padding: 2rem 4.5rem;
+}
+
+.Padding_Home-Objetes {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* [+] */
+.Home-Page__Topic {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-28vh);
+          transform: translateY(-28vh);
+}
+
+h1 {
+  font-family: 'Fredoka One', 'Poppins';
+  font-weight: 500;
+  font-size: 6.2rem;
+}
+
+.School {
+  font-size: 2.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--TextGrey);
+}
+
+/* [+] */
+.Home-Page__Names {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+
+.Teacher,
+.List-Title {
+  font-size: 2.4rem;
+  color: var(--TextGrey);
+}
+
+.List-Authors {
+  padding-left: 3.2rem;
+}
+
+.List-Authors li {
+  font-size: 2.5rem;
+  color: var(--TextGrey);
+}
+
+/* [+] */
+.Home-Page__Date {
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(34vh);
+          transform: translateY(34vh);
+}
+
+/* [IMG] */
+.Cover-Page-SVG {
+  width: 65vw;
+  position: absolute;
+  bottom: -4rem;
+  right: -3rem;
+}

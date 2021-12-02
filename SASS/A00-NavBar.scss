@@ -1,42 +1,48 @@
 // [Sass]:[Text]:[Config-Main]
-// $Primary-Color: hsl(0, 0%, 10%);
-// $Secondary-Color: hsl(0, 0%, 12%);
-// $Terciary-Color: hsl(0, 0%, 14%);
-// $Quaternary-Color: hsl(0, 0%, 16%);
+
+$PrimaryMain:     hsl(0, 0%, 10%);
+$SecondaryMain:   hsl(0, 0%, 12%);
+$TerciaryMain:    hsl(0, 0%, 14%);
+$QuaternaryMain:  hsl(0, 0%, 16%);
 $Link: hsl(250, 90%, 40%);
 
-// [Sass]:[Text]:[DarkMode]
-$Primary-Color: hsl(0, 0%, 90%);
-$Secondary-Color: hsl(0, 0%, 88%);
-$Terciary-Color: hsl(0, 0%, 86%);
-$Quaternary-Color: hsl(0, 0%, 84%);
-// $Link: hsl(250, 90%, 40%);
+$PrimaryDark:     hsl(0, 0%, 88%);
+$SecondaryDark:   hsl(0, 0%, 86%);
+$TerciaryDark:    hsl(0, 0%, 84%);
+$QuaternaryDark:  hsl(0, 0%, 82%);
+$Link: hsl(250, 90%, 40%);
 
-
-// [Sass]:[Color]:[Config-Main]
-// [Very Light, Light, Dark, Very Dark];
-// $Background: hsl(0, 0%, 96%);
 $Purple-VL: hsla(270, 100%, 80%, 100%);
-$Purple-L: hsla(305, 100%, 70%, 90%);
-$D-Purple: hsla(270, 85%, 60%, 100%);
+$Purple-L:  hsla(305, 100%, 70%, 90%);
+$D-Purple:  hsla(270, 85%, 60%, 100%);
 $VD-Purple: hsla(250, 90%, 40%, 90%);
 
-// [Sass]:[Color]:[DarkMode]
-$Background: linear-gradient(
+$HighLighter: hsl(190, 100%, 50%);
+$HighLighter2: hsl(0, 0%, 20%);
+
+$ConfigMain: linear-gradient(
+   to top left, 
+   hsl(0, 0%, 95%) 0%,
+   hsl(0, 0%, 95%) 100%
+);
+$ConfigDark: linear-gradient(
    to top left, 
    hsl(0, 0%, 10%) 0%,
-   hsl(0, 0%, 10%) 100% );
+   hsl(0, 0%, 10%) 100%
+);
 
-// Variables (SASS) [Unit and size]
 $Unit: 1rem;
 $NavBar: 5.5rem;
 $Vh: calc(100vh - $NavBar);
 $Vw: 100%;
 
+
 // Functions (SASS)
 @function size($x) {
    @return $x * $Unit;
 }
+
+
 
 /* ================== CSS ================== */
 * {
@@ -51,22 +57,25 @@ html {
    scroll-behavior: smooth;
 }
 
+
 /* ==== Scrollbar ==== */
 ::-webkit-scrollbar {
-	width: 1rem;
+	width: 1.2rem;
 }
 ::-webkit-scrollbar-track {
-	background: hsl(0, 0%, 32%);
+	background: $HighLighter2;
 }
 ::-webkit-scrollbar-thumb {
-	background: hsl(190, 100%, 60%);
+	background: $HighLighter;
 }
+
 
 /* ========== ParticlesJS ========== */
 body {
-   display: flex;
-   justify-content: center;
-   background: $Background;
+   background: $ConfigMain;
+}
+#Dark {
+   background: $ConfigDark;
 }
 #particles-js {
    height: 100vh;
@@ -76,33 +85,31 @@ body {
 }
 
 
-/* ========== Grid-Container ========== */
-.Grid-Container {
-   position: relative;
-   display: flex;
-   align-content: center;
-   justify-content: center;
-   flex-direction: column;
-   max-width: 1200px;
-}
-
-/* ========== Navigation ========== */
+/* ========== NavBar ========== */
 header.NavBar {
-   position: relative;
+   position: fixed;
    top: 0;
    left: 0;
+   
    height: $NavBar;
-   width: 100%;
+   width: 100vw;
    padding: 0 3.5rem;
+   
    display: flex;
 	align-items: center;
 	justify-content: space-between;
-   background: $Background;
-   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+   
+   background: $ConfigMain;
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
    z-index: 500;
 }
+#Dark header.NavBar {
+   background: $ConfigDark;
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0, 1);
+}
 
-/* header [+] */
+
+/* Logo[+] */
 .NavBar__Logo {
    height: 100%;
 	display: flex;
@@ -115,11 +122,16 @@ header.NavBar {
 .Page-Title {
    font-family: 'Fredoka One', 'Poppins';
    font-size: size(2.6);
-   color: $Primary-Color;
+   letter-spacing: 1px;
+   color: $PrimaryMain;
    margin-left: 0.5rem;
 }
+#Dark .Page-Title {
+   color: $PrimaryDark;
+}
 
-/* header [+] */
+
+/* Navigation[+] */
 nav.NavBar__Links {
    height: 4rem;
    display: flex;
@@ -132,23 +144,36 @@ nav.NavBar__Links {
    list-style: none;
 
    a {
+      // display: none;
       font-size: size(2);
       font-weight: 400;
       text-decoration: none;
-      color: $Secondary-Color;
+      color: $SecondaryMain;
 
       &.Active-Home,
       &:hover {
          color: $Link;
-         border-bottom: 2px solid $VD-Purple;
+         border-bottom: 2px solid $Link;
+      }
+   }
+}
+#Dark .NavBar__Links ul {
+   a {
+      color: $SecondaryDark;
+
+      &.Active-Home,
+      &:hover {
+         color: $HighLighter;
+         border-bottom: 2px solid $HighLighter;
       }
    }
 }
 
+/* Naviagtion[+] → Icon[+]  */
 #Hamburger {
    display: none;
    font-size: size(2.4);
-   color: $Secondary-Color;
+   color: $SecondaryMain;
    margin: 0.4rem;
    padding: 0.4rem;
    cursor: pointer;
@@ -156,5 +181,13 @@ nav.NavBar__Links {
    &:hover {
       color: $Link;
       background: #ccc;
+   }
+}
+#Dark #Hamburger {
+   color: $SecondaryDark;
+
+   &:hover {
+      color: $HighLighter;
+      background: $HighLighter2;
    }
 }
