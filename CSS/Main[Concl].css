@@ -1,9 +1,11 @@
-/* ========= [Intro] ======== */
-#Conclusion {
+/* ========= [Concl & About] ======== */
+#Conclusion,
+#About {
    position: relative;
    top: calc(-1 * var(--Vh));
 }
-section.Concl {
+section.Concl,
+section.About {
    height: auto;
    width: var(--Vw);
    padding: 5rem;
