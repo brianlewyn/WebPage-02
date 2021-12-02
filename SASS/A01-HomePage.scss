@@ -1,72 +1,142 @@
-/* ========== [Home-Page] ========== */
-div.Home-Page {
-   height: 100vh;
-   padding: 2rem 4.5rem;
+// [Sass]:[Text]:[Config-Main]
+
+$PrimaryMain:     hsl(0, 0%, 10%);
+$SecondaryMain:   hsl(0, 0%, 12%);
+$TerciaryMain:    hsl(0, 0%, 14%);
+$QuaternaryMain:  hsl(0, 0%, 16%);
+$ConfigMain:      hsl(0, 0%, 95%);
+$WhiteGlass:      hsla(0, 0%, 95%, .6);
+$LinkMain:        hsl(250, 90%, 40%);
+$ShadowMain:      hsl(0, 0%, 80%);
+
+$PrimaryDark:     hsl(0, 0%, 88%);
+$SecondaryDark:   hsl(0, 0%, 86%);
+$TerciaryDark:    hsl(0, 0%, 84%);
+$QuaternaryDark:  hsl(0, 0%, 82%);
+$ConfigDark:      hsl(0, 0%, 10%);
+$DarkGlass:       hsla(0, 0%, 10%, .6);
+$LinkDark:        hsl(190, 100%, 50%);
+$ShadowDark:      hsl(0, 0%, 22%);
+
+$Purple-VL: hsla(270, 100%, 80%, 100%);
+$Purple-L:  hsla(305, 100%, 70%, 90%);
+$D-Purple:  hsla(270, 85%, 60%, 100%);
+$VD-Purple: hsla(250, 90%, 40%, 90%);
+
+$NavBar: 5.5rem;
+
+@function size($x) {
+   $Unit: 1rem;
+   @return $x * $Unit;
 }
-.Padding_Home-Objetes {
+
+
+/* ========== [Home-Page] ========== */
+#Home {
+   height: 100vh;
+   width: 100%;
+   padding: 2rem 4.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.Home-Page {
    height: 100%;
+   max-height: 1000px;
+   width: 100%;
+   max-width: 1500px;
    position: relative;
    overflow: hidden;
 }
 
 
-/* [+] */
+/* Topic[+] */
 .Home-Page__Topic {
    display: inline-block;
    position: absolute;
    top: 50%;
    left: 0;
    transform: translateY(-28vh);
+   
+   h1 {
+      font-family: 'Fredoka One';
+      font-weight: 500;
+      font-size: size(6.5);
+      color: $PrimaryMain;
+   }
+   
+   .School {
+      font-size: size(3);
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $QuaternaryMain;
+   }
 }
-h1 {
-   font-family: 'Fredoka One', 'Poppins';
-   font-weight: 500;
-   font-size: 6.2rem;
-}
-.School {
-   font-size: 2.6rem;
-   font-weight: 500;
-   text-transform: uppercase;
-   color: var(--TextGrey);
+#Dark .Home-Page__Topic {
+   h1 {
+      color: $PrimaryDark;
+   }
+   
+   .School {
+      color: $QuaternaryDark;
+   }
 }
 
 
-/* [+] */
+/* Names[+] */
 .Home-Page__Names {
    display: inline-block;
    position: absolute;
    top: 50%;
    left: 0;
    transform: translateY(-25%);
+   color: $QuaternaryMain;
+
+   .Teacher,
+   .List-Title {
+      font-size: 2.4rem;
+   }
+
+   .List-Authors {
+      padding-left: 3.2rem;
+   }
+
+   .List-Authors li {
+      font-size: 2.5rem;
+   }
 }
-.Teacher,
-.List-Title {
-   font-size: 2.4rem;
-   color: var(--TextGrey);
-}
-.List-Authors {
-   padding-left: 3.2rem;
-}
-.List-Authors li {
-   font-size: 2.5rem;
-   color: var(--TextGrey);
+#Dark .Home-Page__Names {
+   color: $QuaternaryDark;
 }
 
 
-/* [+] */
+/* Date[+] */
 .Home-Page__Date {
    font-size: 2rem;
    position: absolute;
    top: 50%;
    left: 0;
    transform: translateY(34vh);
+   color: $PrimaryMain;
+}
+#Dark .Home-Page__Date {
+   color: $PrimaryDark;
 }
 
 
-/* [IMG] */
+/* [Img] */
 .Cover-Page-SVG {
    width: 65vw;
    position: absolute;
    bottom: -4rem;
    right: -3rem;
+}
+
+
+/* Special mode for text */
+.Glass {
+   background: $WhiteGlass;
+}
+#Dark .Glass {
+   background: $DarkGlass;
 }

@@ -1,16 +1,29 @@
 /* ========== [Home-Page] ========== */
-div.Home-Page {
+#Home {
   height: 100vh;
+  width: 100%;
   padding: 2rem 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.Padding_Home-Objetes {
+.Home-Page {
   height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  max-width: 1500px;
   position: relative;
   overflow: hidden;
 }
 
-/* [+] */
+/* Topic[+] */
 .Home-Page__Topic {
   display: inline-block;
   position: absolute;
@@ -20,20 +33,29 @@ div.Home-Page {
           transform: translateY(-28vh);
 }
 
-h1 {
-  font-family: 'Fredoka One', 'Poppins';
+.Home-Page__Topic h1 {
+  font-family: 'Fredoka One';
   font-weight: 500;
-  font-size: 6.2rem;
+  font-size: 6.5rem;
+  color: #1a1a1a;
 }
 
-.School {
-  font-size: 2.6rem;
+.Home-Page__Topic .School {
+  font-size: 3rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: var(--TextGrey);
+  color: #292929;
 }
 
-/* [+] */
+#Dark .Home-Page__Topic h1 {
+  color: #e0e0e0;
+}
+
+#Dark .Home-Page__Topic .School {
+  color: #d1d1d1;
+}
+
+/* Names[+] */
 .Home-Page__Names {
   display: inline-block;
   position: absolute;
@@ -41,24 +63,27 @@ h1 {
   left: 0;
   -webkit-transform: translateY(-25%);
           transform: translateY(-25%);
+  color: #292929;
 }
 
-.Teacher,
-.List-Title {
+.Home-Page__Names .Teacher,
+.Home-Page__Names .List-Title {
   font-size: 2.4rem;
-  color: var(--TextGrey);
 }
 
-.List-Authors {
+.Home-Page__Names .List-Authors {
   padding-left: 3.2rem;
 }
 
-.List-Authors li {
+.Home-Page__Names .List-Authors li {
   font-size: 2.5rem;
-  color: var(--TextGrey);
 }
 
-/* [+] */
+#Dark .Home-Page__Names {
+  color: #d1d1d1;
+}
+
+/* Date[+] */
 .Home-Page__Date {
   font-size: 2rem;
   position: absolute;
@@ -66,12 +91,26 @@ h1 {
   left: 0;
   -webkit-transform: translateY(34vh);
           transform: translateY(34vh);
+  color: #1a1a1a;
 }
 
-/* [IMG] */
+#Dark .Home-Page__Date {
+  color: #e0e0e0;
+}
+
+/* [Img] */
 .Cover-Page-SVG {
   width: 65vw;
   position: absolute;
   bottom: -4rem;
   right: -3rem;
+}
+
+/* Special mode for text */
+.Glass {
+  background: rgba(242, 242, 242, 0.6);
+}
+
+#Dark .Glass {
+  background: rgba(26, 26, 26, 0.6);
 }

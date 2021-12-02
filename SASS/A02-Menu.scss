@@ -1,0 +1,112 @@
+// [Sass]:[Text]:[Config-Main]
+
+$PrimaryMain:     hsl(0, 0%, 10%);
+$SecondaryMain:   hsl(0, 0%, 12%);
+$TerciaryMain:    hsl(0, 0%, 14%);
+$QuaternaryMain:  hsl(0, 0%, 16%);
+$ConfigMain:      hsl(0, 0%, 95%);
+$WhiteGlass:      hsla(0, 0%, 95%, .6);
+$LinkMain:        hsl(250, 90%, 40%);
+$ShadowMain:      hsl(0, 0%, 80%);
+
+$PrimaryDark:     hsl(0, 0%, 88%);
+$SecondaryDark:   hsl(0, 0%, 86%);
+$TerciaryDark:    hsl(0, 0%, 84%);
+$QuaternaryDark:  hsl(0, 0%, 82%);
+$ConfigDark:      hsl(0, 0%, 10%);
+$DarkGlass:       hsla(0, 0%, 10%, .6);
+$LinkDark:        hsl(190, 100%, 50%);
+$ShadowDark:      hsl(0, 0%, 22%);
+
+$Purple-VL: hsla(270, 100%, 80%, 100%);
+$Purple-L:  hsla(305, 100%, 70%, 90%);
+$D-Purple:  hsla(270, 85%, 60%, 100%);
+$VD-Purple: hsla(250, 90%, 40%, 90%);
+
+$NavBar: 5.5rem;
+
+@function size($x) {
+   $Unit: 1rem;
+   @return $x * $Unit;
+}
+
+
+/* ========== [Menu-Page] ========== */
+div.Menu-Page {
+   height: calc(100vh - var(--Vh));
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* [IMG] */
+.Waves-09__III {
+   width: 54vw;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+.Tree__III {
+   width: 44vw;
+   position: absolute;
+   bottom: 10px;
+   left: 0;
+}
+.Menu-Page::after {
+   content: '15 min de lectura';
+   font-size: 3rem;
+   width: 20rem;
+   text-align: center;
+   position: absolute;
+   bottom: 10vh;
+   left: 0;
+   z-index: 20;
+}
+.Drops-07__I {
+   width: 12vw;
+   position: absolute;
+   top: 0;
+   right: 0;
+   transform: scaleX(-1);
+}
+
+
+/* [+] */
+.Menu-Links {
+   width: 48rem;
+   padding: 1.5rem;
+   list-style: none;
+   transform: translateX(50%) translateY(0%);
+}
+/* For Each List */
+.Menu-Links ul,
+.Menu-Links ol {
+   margin-left: 2rem;
+}
+/* In General */
+.Menu-Links li,
+.Menu-Links li a {
+   font-size: 1.56rem;
+   font-weight: 300;
+   color: var(--Black1);
+   text-decoration: none;
+}
+/* First List: First Items */
+.Menu-Links > li > a {
+   font-weight: 500;
+}
+.Menu-Links .SecondSubList {
+   list-style: disc;
+}
+.Menu-Links .SecondSubList a {
+   font-weight: 400;
+}
+.Menu-Links .ThirdSubList a {
+   font-weight: 300;
+   list-style: decimal;
+}
+.Menu-Links a:hover {
+   color: var(--Link);
+   text-decoration: underline;
+}

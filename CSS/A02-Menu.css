@@ -1,0 +1,96 @@
+/* ========== [Menu-Page] ========== */
+div.Menu-Page {
+  height: calc(100vh - var(--Vh));
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* [IMG] */
+.Waves-09__III {
+  width: 54vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.Tree__III {
+  width: 44vw;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+.Menu-Page::after {
+  content: '15 min de lectura';
+  font-size: 3rem;
+  width: 20rem;
+  text-align: center;
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  z-index: 20;
+}
+
+.Drops-07__I {
+  width: 12vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+/* [+] */
+.Menu-Links {
+  width: 48rem;
+  padding: 1.5rem;
+  list-style: none;
+  -webkit-transform: translateX(50%) translateY(0%);
+          transform: translateX(50%) translateY(0%);
+}
+
+/* For Each List */
+.Menu-Links ul,
+.Menu-Links ol {
+  margin-left: 2rem;
+}
+
+/* In General */
+.Menu-Links li,
+.Menu-Links li a {
+  font-size: 1.56rem;
+  font-weight: 300;
+  color: var(--Black1);
+  text-decoration: none;
+}
+
+/* First List: First Items */
+.Menu-Links > li > a {
+  font-weight: 500;
+}
+
+.Menu-Links .SecondSubList {
+  list-style: disc;
+}
+
+.Menu-Links .SecondSubList a {
+  font-weight: 400;
+}
+
+.Menu-Links .ThirdSubList a {
+  font-weight: 300;
+  list-style: decimal;
+}
+
+.Menu-Links a:hover {
+  color: var(--Link);
+  text-decoration: underline;
+}

@@ -4,21 +4,20 @@ $PrimaryMain:     hsl(0, 0%, 10%);
 $SecondaryMain:   hsl(0, 0%, 12%);
 $TerciaryMain:    hsl(0, 0%, 14%);
 $QuaternaryMain:  hsl(0, 0%, 16%);
-$Link: hsl(250, 90%, 40%);
+$LinkMain: hsl(250, 90%, 40%);
+$ShadowMain: hsl(0, 0%, 80%);
 
 $PrimaryDark:     hsl(0, 0%, 88%);
 $SecondaryDark:   hsl(0, 0%, 86%);
 $TerciaryDark:    hsl(0, 0%, 84%);
 $QuaternaryDark:  hsl(0, 0%, 82%);
-$Link: hsl(250, 90%, 40%);
+$LinkDark: hsl(190, 100%, 50%);
+$ShadowDark: hsl(0, 0%, 22%);
 
 $Purple-VL: hsla(270, 100%, 80%, 100%);
 $Purple-L:  hsla(305, 100%, 70%, 90%);
 $D-Purple:  hsla(270, 85%, 60%, 100%);
 $VD-Purple: hsla(250, 90%, 40%, 90%);
-
-$HighLighter: hsl(190, 100%, 50%);
-$HighLighter2: hsl(0, 0%, 20%);
 
 $ConfigMain: linear-gradient(
    to top left, 
@@ -31,20 +30,16 @@ $ConfigDark: linear-gradient(
    hsl(0, 0%, 10%) 100%
 );
 
-$Unit: 1rem;
 $NavBar: 5.5rem;
-$Vh: calc(100vh - $NavBar);
-$Vw: 100%;
 
-
-// Functions (SASS)
 @function size($x) {
+   $Unit: 1rem;
    @return $x * $Unit;
 }
 
 
 
-/* ================== CSS ================== */
+/* ================== NavBar ================== */
 * {
    margin: 0;
    padding: 0;
@@ -62,11 +57,11 @@ html {
 ::-webkit-scrollbar {
 	width: 1.2rem;
 }
-::-webkit-scrollbar-track {
-	background: $HighLighter2;
-}
 ::-webkit-scrollbar-thumb {
-	background: $HighLighter;
+   background: $LinkDark;
+}
+::-webkit-scrollbar-track {
+   background: $ShadowDark;
 }
 
 
@@ -105,7 +100,7 @@ header.NavBar {
 }
 #Dark header.NavBar {
    background: $ConfigDark;
-   box-shadow: 0px 0px 10px 0px rgba(0,0,0, 1);
+   box-shadow: 0px 0px 10px 0px rgb(0,0,0);
 }
 
 
@@ -134,14 +129,10 @@ header.NavBar {
 /* Navigation[+] */
 nav.NavBar__Links {
    height: 4rem;
-   display: flex;
-   align-items: center;
-}
-.NavBar__Links ul {
    width: 35rem;
    display: flex;
+   align-items: center;
    justify-content: space-between;
-   list-style: none;
 
    a {
       // display: none;
@@ -149,29 +140,30 @@ nav.NavBar__Links {
       font-weight: 400;
       text-decoration: none;
       color: $SecondaryMain;
+      border-bottom: 2px solid transparent;
 
       &.Active-Home,
       &:hover {
-         color: $Link;
-         border-bottom: 2px solid $Link;
+         color: $LinkMain;
+         border-bottom: 2px solid $LinkMain;
       }
    }
 }
-#Dark .NavBar__Links ul {
+#Dark .NavBar__Links {
    a {
       color: $SecondaryDark;
 
       &.Active-Home,
       &:hover {
-         color: $HighLighter;
-         border-bottom: 2px solid $HighLighter;
+         color: $LinkDark;
+         border-bottom: 2px solid $LinkDark;
       }
    }
 }
 
 /* Naviagtion[+] → Icon[+]  */
 #Hamburger {
-   display: none;
+   // display: none;
    font-size: size(2.4);
    color: $SecondaryMain;
    margin: 0.4rem;
@@ -179,15 +171,15 @@ nav.NavBar__Links {
    cursor: pointer;
 
    &:hover {
-      color: $Link;
-      background: #ccc;
+      color: $LinkMain;
+      background: $ShadowMain;
    }
 }
 #Dark #Hamburger {
    color: $SecondaryDark;
 
    &:hover {
-      color: $HighLighter;
-      background: $HighLighter2;
+      color: $LinkDark;
+      background: $ShadowDark;
    }
 }

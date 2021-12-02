@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* ================== CSS ================== */
+/* ================== NavBar ================== */
 * {
   margin: 0;
   padding: 0;
@@ -19,12 +19,12 @@ html {
   width: 1.2rem;
 }
 
-::-webkit-scrollbar-track {
-  background: #333333;
-}
-
 ::-webkit-scrollbar-thumb {
   background: #00d5ff;
+}
+
+::-webkit-scrollbar-track {
+  background: #383838;
 }
 
 /* ========== ParticlesJS ========== */
@@ -107,49 +107,42 @@ header.NavBar {
 /* Navigation[+] */
 nav.NavBar__Links {
   height: 4rem;
+  width: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.NavBar__Links ul {
-  width: 35rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
 }
 
-.NavBar__Links ul a {
+nav.NavBar__Links a {
   font-size: 2rem;
   font-weight: 400;
   text-decoration: none;
   color: #1f1f1f;
+  border-bottom: 2px solid transparent;
 }
 
-.NavBar__Links ul a.Active-Home, .NavBar__Links ul a:hover {
+nav.NavBar__Links a.Active-Home, nav.NavBar__Links a:hover {
   color: #290ac2;
   border-bottom: 2px solid #290ac2;
 }
 
-#Dark .NavBar__Links ul a {
+#Dark .NavBar__Links a {
   color: #dbdbdb;
 }
 
-#Dark .NavBar__Links ul a.Active-Home, #Dark .NavBar__Links ul a:hover {
+#Dark .NavBar__Links a.Active-Home, #Dark .NavBar__Links a:hover {
   color: #00d5ff;
   border-bottom: 2px solid #00d5ff;
 }
 
 /* Naviagtion[+] → Icon[+]  */
 #Hamburger {
-  display: none;
   font-size: 2.4rem;
   color: #1f1f1f;
   margin: 0.4rem;
@@ -159,7 +152,7 @@ nav.NavBar__Links {
 
 #Hamburger:hover {
   color: #290ac2;
-  background: #ccc;
+  background: #cccccc;
 }
 
 #Dark #Hamburger {
@@ -168,5 +161,5 @@ nav.NavBar__Links {
 
 #Dark #Hamburger:hover {
   color: #00d5ff;
-  background: #333333;
+  background: #383838;
 }
