@@ -1,7 +1,9 @@
-/* ========== [Menu-Page] ========== */
-div.Menu-Page {
-  height: calc(100vh - var(--Vh));
-  position: relative;
+@charset "UTF-8";
+/* ========== [Menu] ========== */
+aside.Menu {
+  height: calc(100vh - 5.5rem);
+  width: 30rem;
+  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,69 +13,37 @@ div.Menu-Page {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-/* [IMG] */
-.Waves-09__III {
-  width: 54vw;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.Tree__III {
-  width: 44vw;
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-}
-
-.Menu-Page::after {
-  content: '15 min de lectura';
-  font-size: 3rem;
-  width: 20rem;
-  text-align: center;
-  position: absolute;
-  bottom: 10vh;
-  left: 0;
-  z-index: 20;
-}
-
-.Drops-07__I {
-  width: 12vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  overflow: auto;
 }
 
 /* [+] */
 .Menu-Links {
-  width: 48rem;
-  padding: 1.5rem;
+  height: 100%;
+  width: 100%;
   list-style: none;
-  -webkit-transform: translateX(50%) translateY(0%);
-          transform: translateX(50%) translateY(0%);
 }
 
-/* For Each List */
-.Menu-Links ul,
-.Menu-Links ol {
+.Menu-Links ul, .Menu-Links ol {
+  /* For Each One */
   margin-left: 2rem;
 }
 
-/* In General */
-.Menu-Links li,
-.Menu-Links li a {
-  font-size: 1.56rem;
+.Menu-Links li {
+  /* For Symbol */
+  font-size: 1.6rem;
+  color: #1a1a1a;
+}
+
+.Menu-Links a {
+  /* For All Link */
+  font-size: 1.6rem;
   font-weight: 300;
-  color: var(--Black1);
+  color: #1a1a1a;
   text-decoration: none;
 }
 
-/* First List: First Items */
 .Menu-Links > li > a {
+  /* First List → First Items */
   font-weight: 500;
 }
 
@@ -91,6 +61,23 @@ div.Menu-Page {
 }
 
 .Menu-Links a:hover {
-  color: var(--Link);
+  color: #290ac2;
   text-decoration: underline;
+}
+
+#Dark .Menu-Links {
+  /* For Symbol */
+  /* For All Link */
+}
+
+#Dark .Menu-Links li {
+  color: #e0e0e0;
+}
+
+#Dark .Menu-Links a {
+  color: #e0e0e0;
+}
+
+#Dark .Menu-Links a:hover {
+  color: #00d5ff;
 }

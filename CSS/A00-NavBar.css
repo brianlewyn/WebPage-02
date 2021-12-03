@@ -21,6 +21,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background: #00d5ff;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-track {
@@ -141,25 +142,21 @@ nav.NavBar__Links a.Active-Home, nav.NavBar__Links a:hover {
   border-bottom: 2px solid #00d5ff;
 }
 
-/* Naviagtion[+] → Icon[+]  */
-#Hamburger {
-  font-size: 2.4rem;
-  color: #1f1f1f;
+/* Naviagtion[+] → IconBtn[+]  */
+#BtnDark {
+  font-size: 2.2rem;
+  color: #dbdbdb;
   margin: 0.4rem;
   padding: 0.4rem;
+  border-radius: 50%;
+  background: #383838;
   cursor: pointer;
 }
 
-#Hamburger:hover {
-  color: #290ac2;
-  background: #cccccc;
-}
-
-#Dark #Hamburger {
-  color: #dbdbdb;
-}
-
-#Dark #Hamburger:hover {
+#BtnDark:hover {
   color: #00d5ff;
-  background: #383838;
+}
+
+#Dark #BtnDark:hover {
+  color: #00d5ff;
 }

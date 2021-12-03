@@ -35,8 +35,8 @@
 
 .Home-Page__Topic h1 {
   font-family: 'Fredoka One';
-  font-weight: 500;
   font-size: 6.5rem;
+  font-weight: 500;
   color: #1a1a1a;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .Home-Page__Names .List-Authors li {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 #Dark .Home-Page__Names {

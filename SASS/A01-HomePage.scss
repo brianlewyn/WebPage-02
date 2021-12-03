@@ -60,8 +60,8 @@ $NavBar: 5.5rem;
    
    h1 {
       font-family: 'Fredoka One';
-      font-weight: 500;
       font-size: size(6.5);
+      font-weight: 500;
       color: $PrimaryMain;
    }
    
@@ -94,7 +94,7 @@ $NavBar: 5.5rem;
 
    .Teacher,
    .List-Title {
-      font-size: 2.4rem;
+      font-size: size(2.4);
    }
 
    .List-Authors {
@@ -102,7 +102,7 @@ $NavBar: 5.5rem;
    }
 
    .List-Authors li {
-      font-size: 2.5rem;
+      font-size: size(2.2);
    }
 }
 #Dark .Home-Page__Names {
@@ -112,7 +112,7 @@ $NavBar: 5.5rem;
 
 /* Date[+] */
 .Home-Page__Date {
-   font-size: 2rem;
+   font-size: size(2);
    position: absolute;
    top: 50%;
    left: 0;
