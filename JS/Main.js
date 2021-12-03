@@ -28,12 +28,11 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
    origin: 'top',
    distance: '4px',
-   duration: 2500,
+   duration: 2000,
    delay: 200
   //  reset: true
 })
 sr.reveal(`
-#Introduction,
   #WhatAre-A,
   #IsTheSame-A,
   #HowDoesItWork-A,
@@ -50,11 +49,8 @@ sr.reveal(`
      #Habit09-A,
      #Habit10-A,
 
-#Conclusion,
-
 #Apps,
-#Books,
-#More
+#Books
 `)
 
 

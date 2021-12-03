@@ -7,11 +7,6 @@
 }
 
 
-html {
-	scroll-behavior: smooth;
-}
-
-
 :root {
    /* [VL= Very Light], [L= Light], [D = Dark], [VD = Very Dark] */
    
@@ -100,7 +95,7 @@ header.Nav {
 /* [+] */
 .Nav__Links {
    display: flex;
-   width: 30rem;
+   width: 25rem;
    justify-content: space-between;
    list-style: none;
    margin-right: 4rem;
