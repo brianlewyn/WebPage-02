@@ -101,6 +101,8 @@
 /* [Img] */
 .Cover-Page-SVG {
   width: 65vw;
+  max-width: 1200px;
+  max-height: 1200px;
   position: absolute;
   bottom: -4rem;
   right: -3rem;

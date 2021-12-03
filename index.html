@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="CSS/A00-NavBar.css">
    <link rel="stylesheet" href="CSS/A01-HomePage.css">
    <link rel="stylesheet" href="CSS/A02-Menu.css">
+   <link rel="stylesheet" href="CSS/A03-Grid.css">
    
    <link rel="stylesheet" href="CSS/Main.css">
    <!-- <link rel="stylesheet" href="CSS/Main[Home-Page].css"> -->
@@ -31,140 +32,64 @@
    <!-- ID Particles -->
    <div id="particles-js"></div>
 
+   <!-- ===== Header (NavBar) ==== -->
+   <header class="NavBar">
+      <!-- Logo Details -->
+      <a href="Index.html" class="NavBar__Logo">
+         <img src="SVG/Undraw/Designer.svg" alt="LOGO: StudyWeb" class="Logo-SVG" width="42">
+         <div class="Page-Title">StudyWeb</div>
+      </a>
+
+      <!-- Links Navigation -->
+      <nav class="NavBar__Links">
+         <a href="#" class="Active-Home">Inicio</a>
+         <a href="#About">Somos</a>
+         <i class='bx bxs-moon' id="BtnDark"></i>
+      </nav>
+   </header>
    
+
    <div class="Grid-Container">
-      <!-- ===== Header (NavBar) ==== -->
-      <header class="NavBar">
-         <!-- Logo Details -->
-         <a href="Index.html" class="NavBar__Logo">
-            <img src="SVG/Undraw/Designer.svg" alt="LOGO: StudyWeb" class="Logo-SVG" width="42">
-            <div class="Page-Title">StudyWeb</div>
-         </a>
+      <!-- Home-Page -->
+      <div id="Home">
+         <div class="Home-Page">
+               
+            <!-- The Topic -->
+            <div class="Home-Page__Topic Glass">
+               <h1>Hábitos de Estudio</h1>
+               <span class="School">
+                  Escuela de Bachilleres Veracruz
+               </span>
+            </div>
+            
+            <!-- The Names -->
+            <div class="Home-Page__Names Glass">
+               <span class="Teacher">
+                  Mtro. Ángel Domínguez Cañedo
+               </span>
 
-         <!-- Links Navigation -->
-         <nav class="NavBar__Links">
-            <a href="#" class="Active-Home">Inicio</a>
-            <a href="#Links">Índice</a>
-            <a href="#More">Vídeos</a>
-            <a href="#About">Somos</a>
-            <i class='bx bxs-moon' id="BtnDark"></i>
-         </nav>
-      </header>
+               <div class="Authors">
+                  <span class="List-Title">Alumnos:</span>
+                  <ul class="List-Authors">
+                     <li>Mejía Mora Brayan #11</li>
+                     <li>Sangabriel Jiménez Hadara #13</li>
+                  </ul>
+               </div>
+            </div>
 
-      <aside class="Menu Glass">
-         <ul class="Menu-Links">
-            <li><a href="#Introduction">Introducción</a></li>
-            
-            <li><a href="#Development">Desarrollo</a></li>
-            
-            <ul class="SecondSubList">
-               <li><a href="#WhatAre-A">
-                  ¿Qué son los hábitos de estudio?</a>
-               </li>
-               <li><a href="#IsTheSame-A">
-                  ¿Es lo mismo, las Técnicas y los Hábitos?</a>
-               </li>
-               <li><a href="#HowDoesItWork-A">
-                  ¿Cómo funcionan los hábitos?</a>
-               </li>
-               <li><a href="#HowToCreate-A">
-                  ¿Cómo crear nuevos hábitos?</a>
-               </li>
-               <li><a href="#TheBestHabits-A">
-                  Los mejores hábitos de estudio para lograr buenos resultados.</a>
-               </li>
-               <ol class="ThirdSubList">
-                  <li><a href="#Habit01-A">
-                     Planea tu día todas las mañanas</a>
-                  </li>
-                  <li><a href="#Habit02-A">
-                     Planea por adelantado las actividades difíciles</a>
-                  </li>
-                  <li><a href="#Habit03-A">
-                     Construye tu ambiente ideal de estudio</a>
-                  </li>
-                  <li><a href="#Habit04-A">
-                     Estudia en intervalos (Pomodoro)</a>
-                  </li>
-                  <li><a href="#Habit05-A">
-                     Toma notas de forma inteligente</a>
-                  </li>
-                  <li><a href="#Habit06-A">
-                     Lee de manera inteligente</a>
-                  </li>
-                  <li><a href="#Habit07-A">
-                     Crea tu propia guía de estudio</a>
-                  </li>
-                  <li><a href="#Habit08-A">
-                     Repasa de forma activa</a>
-                  </li>
-                  <li><a href="#Habit09-A">
-                     Duerme lo suficiente</a>
-                  </li>
-                  <li><a href="#Habit10-A">
-                     Utiliza la reflexión y la retroalimentación</a>
-                  </li>
-               </ol>
-            </ul>
-            
-            <li><a href="#Conclusion">Conclusión</a></li>
-            
-            <li><a href="#Tips">Tips y Recomendaciones</a></li>
-            
-            <ul class="SecondSubList">
-               <li><a href="#Apps">Apps</a></li>
-               <li><a href="#Books">Libros</a></li>
-               <li><a href="#Videos">Vídeos</a></li>
-            </ul>
-         </ul>
+            <!-- The Date -->
+            <span class="Home-Page__Date Glass">
+               09/ Dic/ 2021
+            </span>
 
-         <!-- <img src="SVG/Wave/Wave 09.svg" alt="Waves" class="Waves-09__III" width="100"> -->
-         <!-- <img src="SVG/Undraw/Tree-Swing.svg" alt="Tree-Child" class="Tree__III" width="100"> -->
-         <!-- <img src="SVG/Wave/Wave 07.svg" alt="Drops" class="Drops-07__I" width="100"> -->
-      </aside>
-
+            <!-- IMG: Cover-Page -->
+            <img src="SVG/Wave/Work-Time.svg" alt="Img: Cover-Page" class="Cover-Page-SVG" width="100">
+            
+         </div>
+      </div>
    
       <!-- ===== Main ==== -->
       <main>
-
-         <!-- Home-Page and Main-Content -->
-         <div id="Home">
-            <div class="Home-Page">
-                  
-               <!-- The Topic -->
-               <div class="Home-Page__Topic Glass">
-                  <h1>Hábitos de Estudio</h1>
-                  <span class="School">
-                     Escuela de Bachilleres Veracruz
-                  </span>
-               </div>
-               
-               <!-- The Names -->
-               <div class="Home-Page__Names Glass">
-                  <span class="Teacher">
-                     Mtro. Ángel Domínguez Cañedo
-                  </span>
-
-                  <div class="Authors">
-                     <span class="List-Title">Alumnos:</span>
-                     <ul class="List-Authors">
-                        <li>Mejía Mora Brayan #11</li>
-                        <li>Sangabriel Jiménez Hadara #13</li>
-                     </ul>
-                  </div>
-               </div>
-
-               <!-- The Date -->
-               <span class="Home-Page__Date Glass">
-                  09/ Dic/ 2021
-               </span>
-
-               <!-- IMG: Cover-Page -->
-               <img src="SVG/Wave/Work-Time.svg" alt="Img: Cover-Page" class="Cover-Page-SVG" width="100">
-               
-            </div>
-         </div>         
-         
          <div class="Main-Content">
             
             <div id="Introduction">
@@ -506,7 +431,9 @@
                   <section>
                      <h2>Conclusión</h2>
    
-                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, nobis! Modi nam minima, aspernatur debitis qui facilis consequuntur dolorem aperiam et hic aut saepe? Magnam atque beatae at culpa dolorem!</p>
+                     <p>Los hábitos de estudio son importantes para tener una buena experiencia educativa, además de que obtendrás un aprendizaje significativo y mejoraras tú rendimiento escolar. Al generar estos hábitos es necesario contar con un sentido de perseverancia, organización, paciencia y responsabilidad. El estudio no sólo beneficia tu desarrollo intelectual también forja tu crecimiento social y personal.</p>
+
+                     <p>Además de los hábitos mencionados es importante destacar que para el buen funcionamiento de los hábitos de estudio es importante acompañarlos de otros para mantener una buena energía como hacer ejercicio, cuidar tú alimentación, hacer actividades recreativas y crear relaciones positivas. Recuerda que no todo en la vida es productividad, los descansos son necesarios y saludables.</p>
                   </section>
                </section>
             </div>
@@ -587,11 +514,11 @@
                      <div class="Empty"></div>
                      <div class="Glass-Sp">
                         <h3>Vídeos</h3>
-                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/OY-2sYEQsjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OY-2sYEQsjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <br>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/TOcxLWkd9Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <br>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Fitza6Z1VKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Fitza6Z1VKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                      </div>
                   </div>
                </section>
@@ -601,20 +528,94 @@
          <!-- About Us -->
          <div id="About">
             <h2>Somos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laudantium temporibus libero! Voluptatibus laborum asperiores maiores non corporis saepe facere excepturi deserunt consequuntur ducimus sint perferendis, voluptas mollitia harum aut!</p>
+            
+            <p>StudyWeb, es un página, un proyecto escolar de dos estudiantes de 5º grado de preparatoria, Brayan Mejía Mora y Hadara Sangabriel Jiménez; nosotros decidimos hacer una página web, principalmente como proyecto final de nuestra capacitación, pero no solo eso, queríamos ver cuánto de los conocimientos que adquirimos podíamos utilizar y de qué forma; también porque las páginas web han estado tendencia estos años con sus nuevas funciones y formar de crear webs.</p>
+
+            <p>Tanto yo como mi compañera y amiga, nos gustan todos los temas relacionados con la memoria, el aprendizaje, las técnicas, las habilidades, entre otros aspectos; que si uno quiere puede adquirir.</p>
+
+            <p>El tema que al final decimos mostrar en la web, fue sobre los hábitos de estudio, principalmente porque es un tema fácil de entender y muy poderoso si se sabe usar. Hábitos, los hábitos todo mundo los tiene, pero los hábitos de estudio, aunque la mayoría entienda su valor no los utiliza, a veces no porque no lo haya intentado sino porque no lo hizo de forma correcta, pero con la anterior información sabes cómo y hasta tener un aproximado para realmente adquirir un hábito, además de un listado de hábitos que nosotros consideramos los más importantes.</p>
          </div>
 
       </main>
-
    
       <!-- ===== Aside ==== -->
-      
-   
-      <!-- ===== Footer (Authors (Us) and links to Social Networks) ==== -->
-      <footer>
-         <iframe src="https://open.spotify.com/embed?uri=spotify:playlist:3yAUvjuiSNv1qoMD5F3Bt5" width="350" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-      </footer>
+      <aside class="Menu Glass">
+         <div>
+            <h4>Tabla de Contenidos:</h4>
+            <ul class="Menu-Links">
+               <li><a href="#Introduction">Introducción</a></li>
+               
+               <li><a href="#Development">Desarrollo</a></li>
+               
+               <ul class="SecondSubList">
+                  <li><a href="#WhatAre-A">
+                     ¿Qué son los hábitos de estudio?</a>
+                  </li>
+                  <li><a href="#IsTheSame-A">
+                     ¿Es lo mismo, las Técnicas y los Hábitos?</a>
+                  </li>
+                  <li><a href="#HowDoesItWork-A">
+                     ¿Cómo funcionan los hábitos?</a>
+                  </li>
+                  <li><a href="#HowToCreate-A">
+                     ¿Cómo crear nuevos hábitos?</a>
+                  </li>
+                  <li><a href="#TheBestHabits-A">
+                     Los mejores hábitos de estudio para lograr buenos resultados.</a>
+                  </li>
+                  <ol class="ThirdSubList">
+                     <li><a href="#Habit01-A">
+                        Planea tu día todas las mañanas</a>
+                     </li>
+                     <li><a href="#Habit02-A">
+                        Planea por adelantado las actividades difíciles</a>
+                     </li>
+                     <li><a href="#Habit03-A">
+                        Construye tu ambiente ideal de estudio</a>
+                     </li>
+                     <li><a href="#Habit04-A">
+                        Estudia en intervalos (Pomodoro)</a>
+                     </li>
+                     <li><a href="#Habit05-A">
+                        Toma notas de forma inteligente</a>
+                     </li>
+                     <li><a href="#Habit06-A">
+                        Lee de manera inteligente</a>
+                     </li>
+                     <li><a href="#Habit07-A">
+                        Crea tu propia guía de estudio</a>
+                     </li>
+                     <li><a href="#Habit08-A">
+                        Repasa de forma activa</a>
+                     </li>
+                     <li><a href="#Habit09-A">
+                        Duerme lo suficiente</a>
+                     </li>
+                     <li><a href="#Habit10-A">
+                        Utiliza la reflexión y la retroalimentación</a>
+                     </li>
+                  </ol>
+               </ul>
+               
+               <li><a href="#Conclusion">Conclusión</a></li>
+               
+               <li><a href="#Tips">Tips y Recomendaciones</a></li>
+               
+               <ul class="SecondSubList">
+                  <li><a href="#Apps">Apps</a></li>
+                  <li><a href="#Books">Libros</a></li>
+                  <li><a href="#Videos">Vídeos</a></li>
+               </ul>
+            </ul>
+         </div>
+      </aside>   
    </div>
+
+
+   <!-- ===== Footer (Authors (Us) and links to Social Networks) ==== -->
+   <footer>
+      <iframe src="https://open.spotify.com/embed?uri=spotify:playlist:3yAUvjuiSNv1qoMD5F3Bt5" width="350" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+   </footer>
 
    
    <!-- JS Particles -->

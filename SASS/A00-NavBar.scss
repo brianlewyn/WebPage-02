@@ -4,33 +4,29 @@ $PrimaryMain:     hsl(0, 0%, 10%);
 $SecondaryMain:   hsl(0, 0%, 12%);
 $TerciaryMain:    hsl(0, 0%, 14%);
 $QuaternaryMain:  hsl(0, 0%, 16%);
-$LinkMain: hsl(250, 90%, 40%);
-$ShadowMain: hsl(0, 0%, 80%);
+$ConfigMain:      hsl(0, 0%, 95%);
+$WhiteGlass:      hsla(0, 0%, 95%, .6);
+$LinkMain:        hsl(250, 90%, 40%);
+$ShadowMain:      hsl(0, 0%, 80%);
 
 $PrimaryDark:     hsl(0, 0%, 88%);
 $SecondaryDark:   hsl(0, 0%, 86%);
 $TerciaryDark:    hsl(0, 0%, 84%);
 $QuaternaryDark:  hsl(0, 0%, 82%);
-$LinkDark: hsl(190, 100%, 50%);
-$ShadowDark: hsl(0, 0%, 22%);
+$ConfigDark:      hsl(0, 0%, 10%);
+$DarkGlass:       hsla(0, 0%, 10%, .6);
+$LinkDark:        hsl(190, 100%, 50%);
+$ShadowDark:      hsl(0, 0%, 22%);
 
 $Purple-VL: hsla(270, 100%, 80%, 100%);
 $Purple-L:  hsla(305, 100%, 70%, 90%);
 $D-Purple:  hsla(270, 85%, 60%, 100%);
 $VD-Purple: hsla(250, 90%, 40%, 90%);
 
-$ConfigMain: linear-gradient(
-   to top left, 
-   hsl(0, 0%, 95%) 0%,
-   hsl(0, 0%, 95%) 100%
-);
-$ConfigDark: linear-gradient(
-   to top left, 
-   hsl(0, 0%, 10%) 0%,
-   hsl(0, 0%, 10%) 100%
-);
-
 $NavBar: 5.5rem;
+$HomePage-Y: 100vh;
+$Menu-X: 30rem;
+$Menu-Y: calc(100vh - 5.5rem);
 
 @function size($x) {
    $Unit: 1rem;
@@ -46,10 +42,6 @@ $NavBar: 5.5rem;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
    font-size: 62.5%; /* [62.5] == [10px] */
-}
-
-html {
-   scroll-behavior: smooth;
 }
 
 /* ==== Scrollbar ==== */
@@ -87,7 +79,7 @@ header.NavBar {
    left: 0;
    
    height: $NavBar;
-   width: 100vw;
+   width: 100%;
    padding: 0 3.5rem;
    
    display: flex;
@@ -129,7 +121,9 @@ header.NavBar {
 /* Navigation[+] */
 nav.NavBar__Links {
    height: 4rem;
-   width: 35rem;
+   width: 20rem;
+   // width: auto;
+   // background: blue;
    display: flex;
    align-items: center;
    justify-content: space-between;

@@ -10,10 +10,6 @@
   /* [62.5] == [10px] */
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 /* ==== Scrollbar ==== */
 ::-webkit-scrollbar {
   width: 1.2rem;
@@ -30,13 +26,11 @@ html {
 
 /* ========== ParticlesJS ========== */
 body {
-  background: -webkit-gradient(linear, right bottom, left top, from(#f2f2f2), to(#f2f2f2));
-  background: linear-gradient(to top left, #f2f2f2 0%, #f2f2f2 100%);
+  background: #f2f2f2;
 }
 
 #Dark {
-  background: -webkit-gradient(linear, right bottom, left top, from(#1a1a1a), to(#1a1a1a));
-  background: linear-gradient(to top left, #1a1a1a 0%, #1a1a1a 100%);
+  background: #1a1a1a;
 }
 
 #particles-js {
@@ -52,7 +46,7 @@ header.NavBar {
   top: 0;
   left: 0;
   height: 5.5rem;
-  width: 100vw;
+  width: 100%;
   padding: 0 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,16 +57,14 @@ header.NavBar {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: -webkit-gradient(linear, right bottom, left top, from(#f2f2f2), to(#f2f2f2));
-  background: linear-gradient(to top left, #f2f2f2 0%, #f2f2f2 100%);
+  background: #f2f2f2;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   z-index: 500;
 }
 
 #Dark header.NavBar {
-  background: -webkit-gradient(linear, right bottom, left top, from(#1a1a1a), to(#1a1a1a));
-  background: linear-gradient(to top left, #1a1a1a 0%, #1a1a1a 100%);
+  background: #1a1a1a;
   -webkit-box-shadow: 0px 0px 10px 0px black;
           box-shadow: 0px 0px 10px 0px black;
 }
@@ -108,7 +100,7 @@ header.NavBar {
 /* Navigation[+] */
 nav.NavBar__Links {
   height: 4rem;
-  width: 35rem;
+  width: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

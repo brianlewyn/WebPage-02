@@ -24,6 +24,9 @@ $D-Purple:  hsla(270, 85%, 60%, 100%);
 $VD-Purple: hsla(250, 90%, 40%, 90%);
 
 $NavBar: 5.5rem;
+$HomePage-Y: 100vh;
+$Menu-X: 30rem;
+$Menu-Y: calc(100vh - 5.5rem);
 
 @function size($x) {
    $Unit: 1rem;
@@ -33,14 +36,25 @@ $NavBar: 5.5rem;
 
 /* ========== [Menu] ========== */
 aside.Menu {
-   height: calc(100vh - 5.5rem);
-   width: 30rem;
-   padding: 2rem;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+   position: sticky;
+   top: $NavBar;
+   left: 0;
+   
+   height: $Menu-Y;
+   width: $Menu-X;
+   padding: 2rem;   
+   
    overflow: auto;
+
+   div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   h4 { color: $PrimaryMain; }
 }
+#Dark .Menu h4 { color: $PrimaryDark; }
 
 
 /* [+] */

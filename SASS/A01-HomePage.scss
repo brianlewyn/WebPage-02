@@ -24,6 +24,9 @@ $D-Purple:  hsla(270, 85%, 60%, 100%);
 $VD-Purple: hsla(250, 90%, 40%, 90%);
 
 $NavBar: 5.5rem;
+$HomePage-Y: 100vh;
+$Menu-X: 30rem;
+$Menu-Y: calc(100vh - 5.5rem);
 
 @function size($x) {
    $Unit: 1rem;
@@ -33,7 +36,7 @@ $NavBar: 5.5rem;
 
 /* ========== [Home-Page] ========== */
 #Home {
-   height: 100vh;
+   height: $HomePage-Y;
    width: 100%;
    padding: 2rem 4.5rem;
    display: flex;
@@ -127,6 +130,8 @@ $NavBar: 5.5rem;
 /* [Img] */
 .Cover-Page-SVG {
    width: 65vw;
+   max-width: 1200px;
+   max-height: 1200px;
    position: absolute;
    bottom: -4rem;
    right: -3rem;
