@@ -18,7 +18,7 @@
   height: 100%;
   max-height: 1000px;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1600px;
   position: relative;
   overflow: hidden;
 }
@@ -27,24 +27,22 @@
 .Home-Page__Topic {
   display: inline-block;
   position: absolute;
-  top: 50%;
+  top: 24%;
   left: 0;
-  -webkit-transform: translateY(-28vh);
-          transform: translateY(-28vh);
 }
 
 .Home-Page__Topic h1 {
   font-family: 'Fredoka One';
-  font-size: 6.5rem;
+  font-size: 6.2rem;
   font-weight: 500;
   color: #1a1a1a;
 }
 
 .Home-Page__Topic .School {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #292929;
+  color: #303030;
 }
 
 #Dark .Home-Page__Topic h1 {
@@ -57,13 +55,10 @@
 
 /* Names[+] */
 .Home-Page__Names {
-  display: inline-block;
   position: absolute;
   top: 50%;
   left: 0;
-  -webkit-transform: translateY(-25%);
-          transform: translateY(-25%);
-  color: #292929;
+  color: #303030;
 }
 
 .Home-Page__Names .Teacher,
@@ -87,10 +82,8 @@
 .Home-Page__Date {
   font-size: 2rem;
   position: absolute;
-  top: 50%;
+  top: 92%;
   left: 0;
-  -webkit-transform: translateY(34vh);
-          transform: translateY(34vh);
   color: #1a1a1a;
 }
 
@@ -100,12 +93,10 @@
 
 /* [Img] */
 .Cover-Page-SVG {
-  width: 65vw;
-  max-width: 1200px;
-  max-height: 1200px;
+  width: 74%;
   position: absolute;
-  bottom: -4rem;
-  right: -3rem;
+  bottom: -6%;
+  right: -3%;
 }
 
 /* Special mode for text */

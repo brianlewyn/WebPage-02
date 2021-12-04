@@ -81,6 +81,12 @@ aside.Menu h4 {
   text-decoration: underline;
 }
 
+.Menu-Links a.Need,
+.Menu-Links a.Active-Link {
+  color: #290ac2;
+  font-weight: 500;
+}
+
 #Dark .Menu-Links {
   /* For Symbol */
   /* For All Link */
@@ -96,4 +102,10 @@ aside.Menu h4 {
 
 #Dark .Menu-Links a:hover {
   color: #00d5ff;
+}
+
+#Dark .Menu-Links a.Need,
+#Dark .Menu-Links a.Active-Link {
+  color: #00d5ff;
+  font-weight: 500;
 }

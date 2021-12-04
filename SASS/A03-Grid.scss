@@ -36,7 +36,7 @@ $Menu-Y: calc(100vh - 5.5rem);
 
 div.Grid-Container {
    width: 100%;
-   height: calc(23 * 100vh);
+   // height: calc(23 * 100vh);
    
    display: grid;
    grid-template-columns: $Menu-X 1fr;
@@ -46,6 +46,7 @@ div.Grid-Container {
       "Aside  Main"
       ".      Main"
    ;
+   // background: #111;
 }
 
 div#Home { grid-area: Home; }

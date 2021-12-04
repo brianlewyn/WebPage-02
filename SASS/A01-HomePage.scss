@@ -1,9 +1,9 @@
 // [Sass]:[Text]:[Config-Main]
 
 $PrimaryMain:     hsl(0, 0%, 10%);
-$SecondaryMain:   hsl(0, 0%, 12%);
-$TerciaryMain:    hsl(0, 0%, 14%);
-$QuaternaryMain:  hsl(0, 0%, 16%);
+$SecondaryMain:   hsl(0, 0%, 13%);
+$TerciaryMain:    hsl(0, 0%, 16%);
+$QuaternaryMain:  hsl(0, 0%, 19%);
 $ConfigMain:      hsl(0, 0%, 95%);
 $WhiteGlass:      hsla(0, 0%, 95%, .6);
 $LinkMain:        hsl(250, 90%, 40%);
@@ -47,7 +47,7 @@ $Menu-Y: calc(100vh - 5.5rem);
    height: 100%;
    max-height: 1000px;
    width: 100%;
-   max-width: 1500px;
+   max-width: 1600px;
    position: relative;
    overflow: hidden;
 }
@@ -57,19 +57,18 @@ $Menu-Y: calc(100vh - 5.5rem);
 .Home-Page__Topic {
    display: inline-block;
    position: absolute;
-   top: 50%;
+   top: 24%;
    left: 0;
-   transform: translateY(-28vh);
    
    h1 {
       font-family: 'Fredoka One';
-      font-size: size(6.5);
+      font-size: size(6.2);
       font-weight: 500;
       color: $PrimaryMain;
    }
    
    .School {
-      font-size: size(3);
+      font-size: size(2.6);
       font-weight: 500;
       text-transform: uppercase;
       color: $QuaternaryMain;
@@ -88,11 +87,9 @@ $Menu-Y: calc(100vh - 5.5rem);
 
 /* Names[+] */
 .Home-Page__Names {
-   display: inline-block;
    position: absolute;
    top: 50%;
    left: 0;
-   transform: translateY(-25%);
    color: $QuaternaryMain;
 
    .Teacher,
@@ -117,9 +114,8 @@ $Menu-Y: calc(100vh - 5.5rem);
 .Home-Page__Date {
    font-size: size(2);
    position: absolute;
-   top: 50%;
+   top: 92%;
    left: 0;
-   transform: translateY(34vh);
    color: $PrimaryMain;
 }
 #Dark .Home-Page__Date {
@@ -129,12 +125,10 @@ $Menu-Y: calc(100vh - 5.5rem);
 
 /* [Img] */
 .Cover-Page-SVG {
-   width: 65vw;
-   max-width: 1200px;
-   max-height: 1200px;
+   width: 74%;
    position: absolute;
-   bottom: -4rem;
-   right: -3rem;
+   bottom: -6%;
+   right: -3%;
 }
 
 

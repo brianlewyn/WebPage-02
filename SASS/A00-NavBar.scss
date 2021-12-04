@@ -54,6 +54,7 @@ $Menu-Y: calc(100vh - 5.5rem);
 }
 ::-webkit-scrollbar-track {
    background: $ShadowDark;
+   box-shadow: inset 2px 2px 2px 0 hsla(0, 0%, 96%, .20);
 }
 
 
@@ -136,7 +137,6 @@ nav.NavBar__Links {
       color: $SecondaryMain;
       border-bottom: 2px solid transparent;
 
-      &.Active-Home,
       &:hover {
          color: $LinkMain;
          border-bottom: 2px solid $LinkMain;

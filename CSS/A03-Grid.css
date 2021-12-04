@@ -1,6 +1,5 @@
 div.Grid-Container {
   width: 100%;
-  height: calc(23 * 100vh);
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 30rem 1fr;

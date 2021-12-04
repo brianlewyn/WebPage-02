@@ -100,7 +100,14 @@ aside.Menu {
       color: $LinkMain;
       text-decoration: underline;
    }
+
+   a.Need,
+   a.Active-Link {
+      color: $LinkMain;
+      font-weight: 500;
+   }
 }
+
 
 #Dark .Menu-Links {
    /* For Symbol */
@@ -110,4 +117,10 @@ aside.Menu {
    a {color: $PrimaryDark;}
 
    a:hover {color: $LinkDark;}
+
+   a.Need,
+   a.Active-Link {
+      color: $LinkDark;
+      font-weight: 500;
+   }
 }
