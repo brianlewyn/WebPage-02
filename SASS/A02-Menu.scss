@@ -52,7 +52,13 @@ aside.Menu {
       flex-direction: column;
    }
 
-   h4 { color: $PrimaryMain; }
+   h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: size(2);
+      color: $TerciaryMain;
+      margin-bottom: 0.8rem;
+   }
 }
 #Dark .Menu h4 { color: $PrimaryDark; }
 
@@ -101,7 +107,6 @@ aside.Menu {
       text-decoration: underline;
    }
 
-   a.Need,
    a.Active-Link {
       color: $LinkMain;
       font-weight: 500;
@@ -118,7 +123,6 @@ aside.Menu {
 
    a:hover {color: $LinkDark;}
 
-   a.Need,
    a.Active-Link {
       color: $LinkDark;
       font-weight: 500;

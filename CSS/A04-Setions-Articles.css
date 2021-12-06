@@ -1,0 +1,106 @@
+/* ========== For All The Main Content ========== */
+main h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+main h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #1f1f1f;
+  margin-bottom: 0.8rem;
+}
+
+main h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #242424;
+  margin-bottom: 0.8rem;
+}
+
+main b {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #292929;
+  margin-bottom: 0.8rem;
+}
+
+main a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #290ac2;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+main p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #1f1f1f;
+  text-align: justify;
+  padding: 1rem 0;
+}
+
+main i {
+  font-size: 1.8rem;
+  color: #9942f0;
+}
+
+main img {
+  z-index: 10;
+}
+
+main > section {
+  padding: 0 4rem;
+}
+
+#Dark main h2 {
+  color: #e0e0e0;
+}
+
+#Dark main h3 {
+  color: #dbdbdb;
+}
+
+#Dark main h4 {
+  color: #d6d6d6;
+}
+
+#Dark main b {
+  color: #dbdbdb;
+}
+
+#Dark main a {
+  color: #00d5ff;
+}
+
+#Dark main p {
+  color: #dbdbdb;
+}
+
+#Dark main i {
+  color: #9942f0;
+}
+
+/* ========== [Empty-Box for Link-Name] ========== */
+.Empty {
+  height: 5.5rem;
+  width: 100%;
+  border: 1px solid;
+}
+
+main img {
+  display: none;
+}

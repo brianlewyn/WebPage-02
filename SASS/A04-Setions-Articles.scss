@@ -1,0 +1,121 @@
+// [Sass]:[Text]:[Config-Main]
+
+$PrimaryMain:     hsl(0, 0%, 10%);
+$SecondaryMain:   hsl(0, 0%, 12%);
+$TerciaryMain:    hsl(0, 0%, 14%);
+$QuaternaryMain:  hsl(0, 0%, 16%);
+$ConfigMain:      hsl(0, 0%, 95%);
+$WhiteGlass:      hsla(0, 0%, 95%, .6);
+$LinkMain:        hsl(250, 90%, 40%);
+$ShadowMain:      hsl(0, 0%, 80%);
+
+$PrimaryDark:     hsl(0, 0%, 88%);
+$SecondaryDark:   hsl(0, 0%, 86%);
+$TerciaryDark:    hsl(0, 0%, 84%);
+$QuaternaryDark:  hsl(0, 0%, 82%);
+$ConfigDark:      hsl(0, 0%, 10%);
+$DarkGlass:       hsla(0, 0%, 10%, .6);
+$LinkDark:        hsl(190, 100%, 50%);
+$ShadowDark:      hsl(0, 0%, 22%);
+
+$Purple-VL: hsla(270, 100%, 80%, 100%);
+$Purple-L:  hsla(305, 100%, 70%, 90%);
+$D-Purple:  hsla(270, 85%, 60%, 100%);
+$VD-Purple: hsla(250, 90%, 40%, 90%);
+
+$NavBar: 5.5rem;
+$HomePage-Y: 100vh;
+$Menu-X: 30rem;
+$Menu-Y: calc(100vh - 5.5rem);
+
+@function size($x) {
+   $Unit: 1rem;
+   @return $x * $Unit;
+}
+
+
+/* ========== For All The Main Content ========== */
+main {
+   h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: size(3);
+      color: $PrimaryMain;
+      margin-bottom: 1rem;
+   }
+   h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: size(2.5);
+      color: $SecondaryMain;
+      margin-bottom: 0.8rem;
+   }
+   h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: size(2);
+      color: $TerciaryMain;
+      margin-bottom: 0.8rem;
+   }
+   b {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: size(1.8);
+      color: $QuaternaryMain;
+      margin-bottom: 0.8rem;
+   }
+   a {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: size(1.8);
+      color: $LinkMain;
+      text-decoration: none;
+      margin-bottom: 0.8rem;
+      
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+   p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: size(1.8);
+      color: $SecondaryMain;
+      text-align: justify;
+      padding: 1rem 0;
+   }
+   i {
+      font-size: size(1.8);
+      color: $D-Purple;
+   }
+   img {
+      z-index: 10;
+   }
+   & > section {
+      padding: 0 4rem;
+   }
+}
+
+#Dark main {
+   h2 { color: $PrimaryDark; }
+   h3 { color: $SecondaryDark; }
+   h4 { color: $TerciaryDark; }
+   b  { color: $SecondaryDark; }
+   a { color: $LinkDark;}
+   p  { color: $SecondaryDark; }
+   i  { color: $D-Purple;}
+}
+
+
+/* ========== [Empty-Box for Link-Name] ========== */
+.Empty {
+   height: 5.5rem;
+   width: 100%;
+   // position: relative;
+   // background: blue;
+   border: 1px solid;
+}
+
+main img {
+   display: none;
+}

@@ -25,7 +25,11 @@ aside.Menu div {
 }
 
 aside.Menu h4 {
-  color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #242424;
+  margin-bottom: 0.8rem;
 }
 
 #Dark .Menu h4 {
@@ -81,7 +85,6 @@ aside.Menu h4 {
   text-decoration: underline;
 }
 
-.Menu-Links a.Need,
 .Menu-Links a.Active-Link {
   color: #290ac2;
   font-weight: 500;
@@ -104,7 +107,6 @@ aside.Menu h4 {
   color: #00d5ff;
 }
 
-#Dark .Menu-Links a.Need,
 #Dark .Menu-Links a.Active-Link {
   color: #00d5ff;
   font-weight: 500;
