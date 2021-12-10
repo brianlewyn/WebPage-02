@@ -42,7 +42,7 @@
   font-size: 2.6rem;
   font-weight: 500;
   text-transform: uppercase;
-  color: #303030;
+  color: #292929;
 }
 
 #Dark .Home-Page__Topic h1 {
@@ -58,7 +58,7 @@
   position: absolute;
   top: 50%;
   left: 0;
-  color: #303030;
+  color: #292929;
 }
 
 .Home-Page__Names .Teacher,
@@ -97,13 +97,4 @@
   position: absolute;
   bottom: -6%;
   right: -3%;
-}
-
-/* Special mode for text */
-.Glass {
-  background: rgba(242, 242, 242, 0.6);
-}
-
-#Dark .Glass {
-  background: rgba(26, 26, 26, 0.6);
 }

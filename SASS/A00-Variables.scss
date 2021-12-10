@@ -1,11 +1,9 @@
-// [Sass]:[Text]:[Config-Main]
-
 $PrimaryMain:     hsl(0, 0%, 10%);
 $SecondaryMain:   hsl(0, 0%, 12%);
 $TerciaryMain:    hsl(0, 0%, 14%);
 $QuaternaryMain:  hsl(0, 0%, 16%);
 $ConfigMain:      hsl(0, 0%, 95%);
-$WhiteGlass:      hsla(0, 0%, 95%, .6);
+$WhiteGlass:      hsla(0, 0%, 95%,.6);
 $LinkMain:        hsl(250, 90%, 40%);
 $ShadowMain:      hsl(0, 0%, 80%);
 
@@ -14,7 +12,7 @@ $SecondaryDark:   hsl(0, 0%, 86%);
 $TerciaryDark:    hsl(0, 0%, 84%);
 $QuaternaryDark:  hsl(0, 0%, 82%);
 $ConfigDark:      hsl(0, 0%, 10%);
-$DarkGlass:       hsla(0, 0%, 10%, .6);
+$DarkGlass:       hsla(0, 0%, 10%,.6);
 $LinkDark:        hsl(190, 100%, 50%);
 $ShadowDark:      hsl(0, 0%, 22%);
 
@@ -28,26 +26,7 @@ $HomePage-Y: 100vh;
 $Menu-X: 30rem;
 $Menu-Y: calc(100vh - 5.5rem);
 
-
 @function size($x) {
    $Unit: 1rem;
    @return $x * $Unit;
 }
-
-div.Grid-Container {
-   width: 100%;
-   // height: calc(23 * 100vh);
-   display: grid;
-   grid-template-columns: $Menu-X 1fr;
-   grid-template-rows: $HomePage-Y $Menu-Y 1fr;
-   grid-template-areas: 
-      "Home   Home"
-      "Aside  Main"
-      ".      Main"
-   ;
-   // background: #111;
-}
-
-div#Home { grid-area: Home; }
-aside { grid-area: Aside; }
-main { grid-area: Main; }

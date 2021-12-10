@@ -1,0 +1,32 @@
+// [Sass]:[Text]:[Config-Main]
+@import "A00-Variables.scss";
+
+
+/* ================== footer ================== */
+footer {
+   height: 10rem;
+   width: 100%;
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   background: $ConfigMain;
+   box-shadow: 0px 0px 4px 0px rgba(0,0,0,.3);
+
+   h5 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: size(1.8);
+      color: $PrimaryMain;
+   }
+}
+
+#Dark footer {
+   background: $ConfigDark;
+   box-shadow: 0px 0px 4px 0px rgb(0,0,0);
+
+   h5 {
+      color: $PrimaryDark;
+   }
+}

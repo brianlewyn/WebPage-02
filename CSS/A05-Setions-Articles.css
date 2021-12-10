@@ -1,0 +1,363 @@
+/* ========== For All The Main Content ========== */
+main h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+main h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #1f1f1f;
+  margin-bottom: 0.8rem;
+}
+
+main h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #242424;
+  margin-bottom: 0.8rem;
+}
+
+main b {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #292929;
+  margin-bottom: 0.8rem;
+}
+
+main a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #290ac2;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+main p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #1f1f1f;
+  text-align: justify;
+  padding: 1rem 0;
+}
+
+main i {
+  font-size: 1.8rem;
+  color: #9942f0;
+}
+
+main img {
+  z-index: 10;
+}
+
+main > section {
+  padding: 0 4rem;
+}
+
+#Dark main h2 {
+  color: #e0e0e0;
+}
+
+#Dark main h3 {
+  color: #dbdbdb;
+}
+
+#Dark main h4 {
+  color: #d6d6d6;
+}
+
+#Dark main b {
+  color: #dbdbdb;
+}
+
+#Dark main a {
+  color: #00d5ff;
+}
+
+#Dark main p {
+  color: #dbdbdb;
+}
+
+#Dark main i {
+  color: #9942f0;
+}
+
+/* ========== [Empty-Box for Link-Name] ========== */
+.Empty {
+  height: 5.5rem;
+  width: 100%;
+}
+
+/* ========== [All sections / Articles of Main] ========== */
+article.Intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 30rem;
+}
+
+article.Intro .Intro__Resource {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 30rem;
+      flex-basis: 30rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+article.Intro .Intro__Resource .Wave {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+article.Intro .Intro__Resource .Relax {
+  width: 100%;
+  -webkit-transform: scale(80%);
+          transform: scale(80%);
+  position: absolute;
+  top: 3rem;
+  -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));
+}
+
+article.Intro .Intro__Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+article.WhatAre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 30rem;
+}
+
+article.WhatAre .WhatAre__Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+article.WhatAre .WhatAre__Resource {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 20rem;
+      flex-basis: 20rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+article.WhatAre .WhatAre__Resource .Drops {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+article.Same {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 30rem;
+}
+
+article.Same .Same__Resource {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 35rem;
+      flex-basis: 35rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+article.Same .Same__Resource .Wave {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+article.Same .Same__Resource .Friend {
+  width: 80%;
+  position: absolute;
+  top: 1rem;
+  -webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.5));
+}
+
+article.Same .Same__Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-left: 10px;
+}
+
+article.Work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 30rem;
+}
+
+article.Work .Work__Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 10px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+article.Work .Work__Resource {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-preferred-size: 35rem;
+      flex-basis: 35rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  overflow: hidden;
+}
+
+article.Work .Work__Resource .Brushstroke {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+article.Work .Work__Resource .HealthyHabit {
+  width: 72%;
+  position: absolute;
+  top: 14rem;
+  right: 0;
+}
+
+article.Create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 30rem;
+}
+
+article.Create .Create__Resource {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 35rem;
+      flex-basis: 35rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+}
+
+article.Create .Create__Resource .Wave {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translate(-20%, 20%) scale(138%) scaleX(-1);
+          transform: translate(-20%, 20%) scale(138%) scaleX(-1);
+}
+
+article.Create .Create__Resource .Faq {
+  width: 100%;
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  -webkit-transform: scale(80%);
+          transform: scale(80%);
+}
+
+article.Create .Create__Text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10px;
+}
+
+section.Best section article {
+  min-height: 40rem;
+  overflow: hidden;
+}
+
+section.Best .Img-Jpg {
+  width: 50rem;
+  margin: 3rem 3.2rem 3.2rem;
+  position: relative;
+  top: 2.5rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+section.Best section:nth-child(2n+1) article .Img-Jpg {
+  float: left;
+}
+
+section.Best section:nth-child(2n) article .Img-Jpg {
+  float: right;
+}
