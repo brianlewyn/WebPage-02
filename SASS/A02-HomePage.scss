@@ -1,0 +1,100 @@
+// [Sass]:[Text]:[Config-Main]
+@import "A00-Variables.scss";
+
+
+/* ========== [Home-Page] ========== */
+#Home {
+   height: $HomePage-Y;
+   width: 100%;
+   padding: 2rem 4.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.Home-Page {
+   height: 100%;
+   max-height: 1000px;
+   width: 100%;
+   max-width: 1600px;
+   position: relative;
+   overflow: hidden;
+}
+
+
+/* Topic[+] */
+.Home-Page__Topic {
+   display: inline-block;
+   position: absolute;
+   top: 24%;
+   left: 0;
+   
+   h1 {
+      font-family: 'Fredoka One';
+      font-size: size(6.2);
+      font-weight: 500;
+      color: $PrimaryMain;
+   }
+   
+   .School {
+      font-size: size(2.6);
+      font-weight: 500;
+      text-transform: uppercase;
+      color: $QuaternaryMain;
+   }
+}
+#Dark .Home-Page__Topic {
+   h1 {
+      color: $PrimaryDark;
+   }
+   
+   .School {
+      color: $QuaternaryDark;
+   }
+}
+
+
+/* Names[+] */
+.Home-Page__Names {
+   position: absolute;
+   top: 50%;
+   left: 0;
+   color: $QuaternaryMain;
+
+   .Teacher,
+   .List-Title {
+      font-size: size(2.4);
+   }
+
+   .List-Authors {
+      padding-left: 3.2rem;
+   }
+
+   .List-Authors li {
+      font-size: size(2.2);
+   }
+}
+#Dark .Home-Page__Names {
+   color: $QuaternaryDark;
+}
+
+
+/* Date[+] */
+.Home-Page__Date {
+   font-size: size(2);
+   position: absolute;
+   top: 92%;
+   left: 0;
+   color: $PrimaryMain;
+}
+#Dark .Home-Page__Date {
+   color: $PrimaryDark;
+}
+
+
+/* [Img] */
+.Cover-Page-SVG {
+   width: 74%;
+   position: absolute;
+   bottom: -6%;
+   right: -3%;
+}

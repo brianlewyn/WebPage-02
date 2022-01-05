@@ -1,0 +1,274 @@
+// [Sass]:[Text]:[Config-Main]
+@import "A00-Variables.scss";
+
+
+/* ========== For All The Main Content ========== */
+main {
+   h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: size(3);
+      color: $PrimaryMain;
+      margin-bottom: 1rem;
+   }
+   h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: size(2.5);
+      color: $SecondaryMain;
+      margin-bottom: 0.8rem;
+   }
+   h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: size(2);
+      color: $TerciaryMain;
+      margin-bottom: 0.8rem;
+   }
+   b {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: size(1.8);
+      color: $QuaternaryMain;
+      margin-bottom: 0.8rem;
+   }
+   a {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      font-size: size(1.8);
+      color: $LinkMain;
+      text-decoration: none;
+      margin-bottom: 0.8rem;
+      
+      &:hover {
+         text-decoration: underline;
+      }
+   }
+   p {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 300;
+      font-size: size(1.8);
+      color: $SecondaryMain;
+      text-align: justify;
+      padding: 1rem 0;
+   }
+   i {
+      font-size: size(1.8);
+      color: $D-Purple;
+   }
+   img {
+      z-index: 10;
+   }
+   & > section {
+      padding: 0 4rem;
+   }
+}
+
+#Dark main {
+   h2 { color: $PrimaryDark; }
+   h3 { color: $SecondaryDark; }
+   h4 { color: $TerciaryDark; }
+   b  { color: $SecondaryDark; }
+   a { color: $LinkDark;}
+   p  { color: $SecondaryDark; }
+   i  { color: $D-Purple;}
+}
+
+
+/* ========== [Empty-Box for Link-Name] ========== */
+.Empty {
+   height: 5.5rem;
+   width: 100%;
+}
+
+
+/* ========== [All sections / Articles of Main] ========== */
+// ================ [Intro] ================ //
+article.Intro {
+   display: flex;
+   min-height: 30rem;
+
+   .Intro__Resource {
+      position: relative;
+      display: flex;
+      flex-basis: 30rem;
+      flex-shrink: 0;
+
+      .Wave {
+         width: 100%;
+         position: absolute;
+         top: 0;
+         transform: scaleY(-1);
+      }
+
+      .Relax {
+         width: 100%;
+         transform: scale(80%);
+         position: absolute;
+         top: 3rem;
+         filter: drop-shadow(0px 0px 1px rgba(0,0,0,.5));
+      }
+   }
+
+   .Intro__Text {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+   }
+}
+
+
+// ================ [Devp] ================ //
+article.WhatAre {
+   display: flex;
+   min-height: 30rem;
+
+   .WhatAre__Text {
+      display: flex;
+      flex-direction: column;
+      order: 1;
+   }
+
+   .WhatAre__Resource {
+      position: relative;
+      display: flex;
+      flex-basis: 20rem;
+      flex-shrink: 0;
+      order: 2;
+
+      .Drops {
+         width: 100%;
+         position: absolute;
+         top: 0;
+         transform: scaleX(-1);
+      }
+   }
+}
+
+
+article.Same {
+   display: flex;
+   min-height: 30rem;
+
+   .Same__Resource {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-basis: 35rem;
+      flex-shrink: 0;
+
+      .Wave {
+         width: 100%;
+         position: absolute;
+         top: 0;
+      }
+
+      .Friend {
+         width: 80%;
+         position: absolute;
+         top: 1rem;
+         filter: drop-shadow(0px 0px 1px rgba(0,0,0,.5));
+      }
+   }
+
+   .Same__Text {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding-left: 10px;
+   }
+}
+
+
+article.Work {
+   display: flex;
+   min-height: 30rem;
+
+   .Work__Text {
+      display: flex;
+      flex-direction: column;
+      padding-right: 10px;
+      order: 1;
+   }
+   .Work__Resource {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-basis: 35rem;
+      flex-shrink: 0;
+      order: 2;
+      overflow: hidden;
+
+      .Brushstroke {
+         width: 100%;
+         position: absolute;
+         top: 0;
+      }
+      .HealthyHabit {
+         width: 72%;
+         position: absolute;
+         top: 14rem;
+         right: 0;
+      }
+   }
+}
+
+
+article.Create {
+   display: flex;
+   min-height: 30rem;
+
+   .Create__Resource {
+      position: relative;
+      display: flex;
+      // justify-content: center;
+      flex-basis: 35rem;
+      flex-shrink: 0;
+      overflow: hidden;
+
+      .Wave {
+         width: 100%;
+         position: absolute;
+         top: 0;
+         transform: translate(-20%, 20%) scale(138%) scaleX(-1);
+      }
+      .Faq {
+         width: 100%;
+         position: absolute;
+         top: 4rem;
+         right: 0;
+         transform: scale(80%);
+      }
+   }
+
+   .Create__Text {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+   }
+}
+
+
+section.Best {
+
+   section article {
+      min-height: 40rem;
+      overflow: hidden;
+   }
+
+   .Img-Jpg {
+      width: 50rem;
+      margin: 3rem 3.2rem 3.2rem;
+      position: relative;
+      top: 2.5rem;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+   }
+   
+   section:nth-child(2n+1) article .Img-Jpg {
+      float: left;
+   }
+
+   section:nth-child(2n) article .Img-Jpg {
+      float: right;
+   }
+}

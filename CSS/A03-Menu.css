@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* ========== [Menu] ========== */
+aside.Menu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5.5rem;
+  left: 0;
+  height: calc(100vh - 5.5rem);
+  width: 30rem;
+  padding: 2rem;
+  overflow: auto;
+}
+
+aside.Menu div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+aside.Menu h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #242424;
+  margin-bottom: 0.8rem;
+}
+
+#Dark .Menu h4 {
+  color: #e0e0e0;
+}
+
+/* [+] */
+.Menu-Links {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+.Menu-Links ul, .Menu-Links ol {
+  /* For Each One */
+  margin-left: 2rem;
+}
+
+.Menu-Links li {
+  /* For Symbol */
+  font-size: 1.6rem;
+  color: #1a1a1a;
+}
+
+.Menu-Links a {
+  /* For All Link */
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.Menu-Links > li > a {
+  /* First List → First Items */
+  font-weight: 500;
+}
+
+.Menu-Links .SecondSubList {
+  list-style: disc;
+}
+
+.Menu-Links .SecondSubList a {
+  font-weight: 400;
+}
+
+.Menu-Links .ThirdSubList a {
+  font-weight: 300;
+  list-style: decimal;
+}
+
+.Menu-Links a:hover {
+  color: #290ac2;
+  text-decoration: underline;
+}
+
+.Menu-Links a.Active-Link {
+  color: #290ac2;
+  font-weight: 500;
+}
+
+#Dark .Menu-Links li {
+  color: #e0e0e0;
+}
+
+#Dark .Menu-Links a {
+  color: #e0e0e0;
+}
+
+#Dark .Menu-Links a:hover {
+  color: #00d5ff;
+}
+
+#Dark .Menu-Links a.Active-Link {
+  color: #00d5ff;
+  font-weight: 500;
+}

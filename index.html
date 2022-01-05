@@ -8,54 +8,52 @@
    <!-- Fredoka-One and Poppins Link -->
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;500;700&display=swap">
 
-   <!-- My Styles Sheets CSS file -->
-   <link rel="stylesheet" href="CSS/Header.css">
-   <link rel="stylesheet" href="CSS/Main.css">
-   <link rel="stylesheet" href="CSS/Main[Home-Page].css">
-   <link rel="stylesheet" href="CSS/Main[Menu-Page].css">
-   <link rel="stylesheet" href="CSS/Main[Intro].css">
-   <link rel="stylesheet" href="CSS/Main[Devp].css">
-   <link rel="stylesheet" href="CSS/Main[Concl].css">
-   <link rel="stylesheet" href="CSS/Main[Tips].css">
-   <link rel="stylesheet" href="CSS/Main-Secion[More].css">
-   <link rel="stylesheet" href="CSS/Aside.css">
-   <link rel="stylesheet" href="CSS/Footer.css">
+   <!-- Boxicons CSS -->
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 
-   <title>Study Web3</title>
+   <!-- My Styles Sheets CSS file -->
+   <link rel="stylesheet" href="CSS/A01-NavBar.css">
+   <link rel="stylesheet" href="CSS/A02-HomePage.css">
+   <link rel="stylesheet" href="CSS/A03-Menu.css">
+   <link rel="stylesheet" href="CSS/A04-Grid.css">
+   <link rel="stylesheet" href="CSS/A05-Setions-Articles.css">
+   <link rel="stylesheet" href="CSS/A06-Mult.css">
+   <link rel="stylesheet" href="CSS/A07-About.css">
+   <link rel="stylesheet" href="CSS/A08-Footer.css">
+
+   <title>Study Web2</title>
 </head>
 
 <body>
-
+   
    <!-- ID Particles -->
    <div id="particles-js"></div>
 
-   <!-- ===== Header (TopBar, Navigation) ==== -->
-   <header class="Nav">
+   <!-- ===== Header (NavBar) ==== -->
+   <header class="NavBar">
       <!-- Logo Details -->
-      <a href="Index.html" class="Nav__Logo">
+      <a href="index.html" class="NavBar__Logo">
          <img src="SVG/Undraw/Designer.svg" alt="LOGO: StudyWeb" class="Logo-SVG" width="42">
          <div class="Page-Title">StudyWeb</div>
       </a>
 
       <!-- Links Navigation -->
-      <ul class="Nav__Links">
-         <li><a href="#Home-Page">Inicio</a></li>
-         <li><a href="#Links">Índice</a></li>
-         <li><a href="#About">Somos</a></li>
-      </ul>
+      <nav class="NavBar__Links">
+         <a href="#">Inicio</a>
+         <a href="#About">Somos</a>
+         <i class='bx bxs-moon' id="BtnDark"></i>
+      </nav>
    </header>
-
    
-   <!-- ===== Main ==== -->
-   <main>
 
-      <!-- Home-Page and Main-Content -->
+   <div class="Grid-Container">
+      
+      <!-- Home-Page -->
       <div id="Home">
-         <div id="Home-Page">
-         <div class="Padding_Home-Objetes">
-            
+         <div class="Home-Page">
+               
             <!-- The Topic -->
-            <div class="Home-Page__Topic Background">
+            <div class="Home-Page__Topic Glass">
                <h1>Hábitos de Estudio</h1>
                <span class="School">
                   Escuela de Bachilleres Veracruz
@@ -63,7 +61,7 @@
             </div>
             
             <!-- The Names -->
-            <div class="Home-Page__Names Background">
+            <div class="Home-Page__Names Glass">
                <span class="Teacher">
                   Mtro. Ángel Domínguez Cañedo
                </span>
@@ -78,453 +76,402 @@
             </div>
 
             <!-- The Date -->
-            <span class="Home-Page__Date Background">
+            <span class="Home-Page__Date Glass">
                09/ Dic/ 2021
             </span>
 
             <!-- IMG: Cover-Page -->
             <img src="SVG/Wave/Work-Time.svg" alt="Img: Cover-Page" class="Cover-Page-SVG" width="100">
-         
-         </div>
-         </div>
-
-         
-         <div id="Links">
-            <div class="Empty"></div>
-            <div class="Menu-Page">
-               <img src="SVG/Wave/Wave 09.svg" alt="Waves" class="Waves-09__III" width="100">
-               <img src="SVG/Undraw/Tree-Swing.svg" alt="Tree-Child" class="Tree__III" width="100">
-               <img src="SVG/Wave/Wave 07.svg" alt="Drops" class="Drops-07__I" width="100">
-
-               <ul class="Menu-Links Background">
-                  <li>
-                     <a href="#Introduction">Introducción</a>
-                  </li><br>
-                  
-                  <li>
-                     <a href="#Development">Desarrollo</a>
-                  </li>
-                  <ul class="SecondSubList">
-                     <li><a href="#WhatAre-A">
-                        ¿Qué son los hábitos de estudio?</a>
-                     </li>
-                     <li><a href="#IsTheSame-A">
-                        ¿Es lo mismo, las Técnicas y los Hábitos?</a>
-                     </li>
-                     <li><a href="#HowDoesItWork-A">
-                        ¿Cómo funcionan los hábitos?</a>
-                     </li>
-                     <li><a href="#HowToCreate-A">
-                        ¿Cómo crear nuevos hábitos?</a>
-                     </li>
-                     <li><a href="#TheBestHabits-A">Los mejores hábitos de estudio para lograr buenos resultados.</a></li>
-                     <ol class="ThirdSubList">
-                        <li><a href="#Habit01-A">
-                           Planea tu día todas las mañanas</a>
-                        </li>
-                        <li><a href="#Habit02-A">
-                           Planea por adelantado las actividades difíciles</a>
-                        </li>
-                        <li><a href="#Habit03-A">
-                           Construye tu ambiente ideal de estudio</a>
-                        </li>
-                        <li><a href="#Habit04-A">
-                           Estudia en intervalos (Pomodoro)</a>
-                        </li>
-                        <li><a href="#Habit05-A">
-                           Toma notas de forma inteligente</a>
-                        </li>
-                        <li><a href="#Habit06-A">
-                           Lee de manera inteligente</a>
-                        </li>
-                        <li><a href="#Habit07-A">
-                           Crea tu propia guía de estudio</a>
-                        </li>
-                        <li><a href="#Habit08-A">
-                           Repasa de forma activa</a>
-                        </li>
-                        <li><a href="#Habit09-A">
-                          Duerme lo suficiente</a>
-                        </li>
-                        <li><a href="#Habit10-A">
-                           Utiliza la reflexión y la retroalimentación</a>
-                        </li>
-                     </ol>
-                  </ul><br>
-                  
-                  <li>
-                  <a href="#Conclusion">Conclusión</a>
-                  </li><br>
-                  
-                  <li>
-                     <a href="#Tips">Tips y Recomendaciones</a>
-                  </li>
-                  <ul class="SecondSubList">
-                     <li><a href="#Apps">Apps</a></li>
-                     <li><a href="#Books">Libros</a></li>
-                     <li><a href="#More">Vídeos</a></li>
-                  </ul>
-               </ul>
-            </div>
-         </div>
-         
-         
-         <div class="Main-Content">
             
-            <div id="Introduction">
+         </div>
+      </div>
+   
+      <!-- ===== Main ==== -->
+      <main>
+         
+         <!-- Section: Introduction -->
+         <section id="Introduction">
+            <div class="Empty"></div>   
+            <article class="Intro TextBox">
+               <div class="Intro__Resource">
+                  <img src="SVG/Wave/Wave 09.svg" alt="Waves" class="Wave" width="100">
+                  <img src="SVG/Undraw/A-Moment-To-Relax.svg" alt="Moment Realx" class="Relax" width="100">
+               </div>
+
+               <div class="Intro__Text Glass">
+                  <h2>Introducción</h2>
+                  
+                  <p>¿Estás buscando la receta mágica de los hábitos de estudio para triunfar en la escuela o en un curso? Lamentablemente no existe.</p>
+                  
+                  <p>El éxito estudiantil no depende de una fórmula de técnicas de estudio única, sino todo lo contrario, intervienen toda una serie de factores que hacen que lo que ayuda a una persona, a otra no. </p>
+                  
+                  <p>Por ello, en este artículo se abordan cuáles son algunos métodos de estudio útiles, la importancia del autoconocimiento para crear una técnica de estudio a tu medida, y algunos tips para eliminar malos hábitos, tales como la procrastinación, la indecisión y las distracciones.</p>
+               </div>
+            </article>
+         </section>
+         
+         <!-- Section: Development -->
+         <section id="Development" class="Devp">
+
+            <!-- Section[Devp]: WhatAre-A -->
+            <section id="WhatAre-A">
                <div class="Empty"></div>
-               <section class="Intro">
-                  <img src="SVG/Wave/Wave 09.svg" alt="Waves" class="Waves-09__II" width="100">
-                  <img src="SVG/Undraw/A-Moment-To-Relax.svg" alt="Moment Realx" class="Relax__II" width="100">
-                  <article class="Intro__Text Background">
-                     <h2>Introducción</h2>
+               <article class="WhatAre TextBox">
+                  <div class="WhatAre__Resource">
+                     <img src="SVG/Wave/Wave 07.svg" alt="Drops" class="Drops" width="100">
+                  </div>
+
+                  <div class="WhatAre__Text Glass">
+                     <h2>Desarrollo</h2>
+                     <h3>¿Qué son los hábitos de estudio?</h3>
                      
-                     <p>¿Estás buscando la receta mágica de los hábitos de estudio para triunfar en la escuela o en un curso? Lamentablemente no existe.</p>
+                     <p>Hay que empezar por el principio, ¿qué es un hábito de estudio y cómo se llega este?, ¿es algo con lo que se nace o es una habilidad que se adquiere y fortalece con el tiempo?, y, sobre todo, ¿por qué son importantes?</p>
+                     <p>Los hábitos de estudio son un conjunto de rutinas y técnicas que utilizan los estudiantes para adquirir y aprovechar al máximo los conocimientos que adquieren. Si bien hay algunos métodos generales que pueden ayudar a todos los estudiantes, las competencias de cada persona son diferentes, por lo que un buen hábito de estudio combina habilidades personales innatas con aquellas que se pueden fortalecer con el tiempo.</p>                           
+                     <p>Por ejemplo, hay personas que se les facilita aprender con música (cantan lo que aprenden), esta sería una habilidad innata que podría combinarse con técnicas y hábitos de estudio generales, como organizar tiempos de estudio. Por eso es fundamental que cada persona conozca las aptitudes y herramientas con las que cuenta y le facilita el estudio.</p>
+                  </div>
+               </article>
+            </section>
+
+            <!-- Section[Devp]: IsTheSame-A -->
+            <section id="IsTheSame-A">
+               <div class="Empty"></div>
+               <article class="Same TextBox">
+                  <div class="Same__Resource">
+                     <img src="SVG/Wave/Wave 09.svg" alt="Wave" class="Wave" width="100">
+                     <img src="SVG/Undraw/Friends.svg" alt="Friends" class="Friend" width="100">
+                  </div>
+
+                  <div class="Same__Text Glass">
+                     <h3>¿Es lo mismo,
+                     <br> las Técnicas y los Hábitos?</h3>
                      
-                     <p style="text-indent: 40px;">El éxito estudiantil no depende de una fórmula de técnicas de estudio única, sino todo lo contrario, intervienen toda una serie de factores que hacen que lo que ayuda a una persona, a otra no. </p>
+                     <p>Los hábitos de estudios se enfocan más en crear hábitos de estudios positivos en las personas, ya sea cumplir un horario, mantener un ritmo de trabajo, estudiar en un espacio ordenado, etc.</p>                           
+                     <p>En cambio, las técnicas de estudios son métodos implementados con el fin de mejorar el proceso de aprendizaje, favoreciendo la comprensión, memorización y rendimiento académico.</p>
+                  </div>
+               </article>
+            </section>
+
+            <!-- Section[Devp]: HowDoesItWork-A -->
+            <section id="HowDoesItWork-A">
+               <div class="Empty"></div>
+               <article class="Work TextBox">
+                  <div class="Work__Resource">
+                     <img src="SVG/Wave/Wave 04.svg" alt="Wave" class="Brushstroke" width="100">
+                     <img src="SVG/Undraw/Healthy_Habit.svg" alt="Habit" class="HealthyHabit" width="100">
+                  </div>
+
+                  <div class="Work__Text Glass">
+                     <h3>¿Cómo funcionan los hábitos?</h3>
                      
-                     <p style="text-indent: 40px;">Por ello, en este artículo se abordan cuáles son algunos métodos de estudio útiles, la importancia del autoconocimiento para crear una técnica de estudio a tu medida, y algunos tips para eliminar malos hábitos, tales como la procrastinación, la indecisión y las distracciones.</p>
+                     <p>Los hábitos son simples elecciones que hacemos en determinados momentos.</p>
+
+                     <p>Según los científicos, los hábitos aparecen porque nuestro cerebro está siempre buscando formas de ahorrar esfuerzos. Cuando haces algo rutinario, el cerebro no toma decisiones, se relaja y descansa. Esto es bueno porque nos despreocupamos de comportamientos básicos, como lavarse los dientes. Pero es malo cuando se trata de un hábito que no queremos: como el cerebro se desconecta, a menos que luches conscientemente contra el hábito, éste se seguirá produciendo automáticamente una y otra vez.</p>
+                        
+                     <p>Los hábitos funcionan en ciclos de tres pasos:</p>
+                     
+                     <p>Primero se produce una señal, un detonante que avisa a tu cerebro para que seleccione el hábito correspondiente y se ponga en modo automático.</p>
+                     <p>Después se desarrolla una rutina, que puede ser física, mental o emocional.</p>
+                     <p>Al final hay una recompensa, que ayuda a tu cerebro a recordar ese comportamiento para el futuro.</p>
+                  </div>
+               </article>
+            </section>
+
+            <!-- Section[Devp]: HowToCreate-A -->
+            <section id="HowToCreate-A">
+               <div class="Empty"></div>
+               <article class="Create TextBox">
+                  <div class="Create__Resource">
+                     <img src="SVG/Wave/Wave 10.svg" alt="Wave" class="Wave" width="100">
+                     <img src="SVG/Undraw/Faq.svg" alt="Faq" class="Faq" width="100">
+                  </div>
+
+                  <div class="Create__Text Glass">
+                     <h3>¿Cómo crear nuevos hábitos?</h3>
+
+                     <p>Para crear un hábito nuevo tienes que encontrar primero una señal de activación simple y, después, definir con claridad la recompensa. Por ejemplo, ponerte unas zapatillas de deporte en el mismo momento de llegar a tu casa después de trabajar, puede servir para crear el hábito de salir a correr. La recompensa podría ser la propia satisfacción que produce hacer ejercicio, o comerte después algún dulce mientras ves un programa de televisión que te guste.</p>
+
+                     <p>Normalmente, crear una señal y definir la recompensa no es suficiente. Si no, sería bastante sencillo hacer ejercicio, comer sano y organizarte productivamente. Lo que refuerza que el ciclo señal-rutina-recompensa se repita lo suficiente, es que exista un fuerte deseo de que llegue la recompensa. A veces, el hecho de asociar una señal a una recompensa hace que el deseo se vaya creando de manera inconsciente. Pero otras veces tendrás que averiguar la manera de despertar ese deseo.</p>
+                        
+                     <p>Un hábito, según las teorías cognitivas más actuales, no es únicamente una automatización, sino que incluye a la conciencia, las metas y la motivación del momento. El 40% de nuestras acciones diarias son producto de los hábitos adquiridos, asegura la Universidad de Duke.</p>
+                     
+                     <p>Dependiendo de la complejidad, incorporar un nuevo hábito puede demorar entre 18 y 254 días, aunque la mayoría logra hacerlo en 66 días, asegura un estudio de la University College London.</p>
+
+                     <p>Para consolidar un hábito de estudio es recomendable empezar con sesiones cortas, controlar influencias que afectan el rendimiento -smartphone, redes sociales- y trazar objetivos claros. Un informe de la Dominican University of California asegura que proponerte una meta aumenta tus chances de alcanzarla entre un 20 y un 30%.</p>
+
+                     <p><i>Cuando alcances pequeñas metas propuestas a la largo de la jornada, prémiate con un helado, una canción, una caminata corta o algo que mantenga tu motivación para seguir estudiando y llegar a la próxima recompensa.</i></p>
+                  </div>
+               </article>
+            </section>
+
+            <!-- Section[Devp]: TheBestHabits-A -->
+            <section id="TheBestHabits-A" class="Best">
+
+               <!-- Section[Devp][Best]: Habit01-A -->
+               <section id="Habit01-A">
+                  <div class="Empty"></div>
+                  <h3>Los mejores hábitos de estudio para lograr buenos resultados</h3>
+                  
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab1.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>Hábito 1 - Planea tu día todas las mañanas</h4>
+
+                     <p>Entre los hábitos de estudiantes exitosos, sin duda alguna el más importante es organizar tiempos. Esto quiere decir que debes escoger el momento del día en el que te sientes con más energía y más animado para estudiar, y también debes organizar cuánto tiempo vas a estudiar por materia (en caso de que tengas varias).</p><br>
+
+                     <ul>
+                        <li><b>Planifica tu tiempo de manera realista</b>
+                           <p>Las técnicas para organizar y aprovechar el tiempo pueden ayudarte a tener más control en tu vida y conseguir tiempo de estudio más eficaz, y por tanto disponer de más tiempo libre. </p>
+                        </li>
+                        
+                        <li><b>Estructura tu Horario</b>
+                           <p>Estructura tu horario académico como si fueran 40 horas semanales de trabajo; después de todo, estudiar es tu actividad principal. Si un día no cumples las horas previstas, recuerda que tendrás que recuperarlas al día siguiente.</p>
+                        </li>
+                        
+                        <li><b>Utiliza un Calendario</b>
+                           <p>Utiliza un calendario para registrar todas las actividades de horario regular y las fechas asignadas para exámenes y trabajos. Incluye tiempo para dormir, hacer ejercicios físicos y actividades sociales. Es difícil aprender estando aturdidos o agotados.</p>
+                        </li>
+                        
+                        <li><b>El mejor lugar y momento del día</b>
+                           <p>Determina el mejor lugar y momento del día para estudiar. Lo ideal es estudiar sin distracciones (televisión, ruidos, olores, etc.), en un lugar ordenado, bien aireado y con buena luz, y disponiendo de un asiento cómodo.</p>
+                        </li>
+                     </ul>
+                     
                   </article>
                </section>
-            </div>
-            
-            <div id="Development">
-               <div class="Empty"></div>
-               <section class="Devep">
 
-                  <div id="WhatAre-A">
-                     <div class="Empty"></div>
-                     <article class="WhatAre">
-                        <div class="WhatAre__Text Background-Sp">
-                           
-                           <img src="SVG/Wave/Wave 07.svg" alt="Drops" class="Drops-07-2__I" width="100">
-                           
-                           <h2>Desarrollo</h2>
-                           <h3>¿Qué son los hábitos de estudio?</h3>
-                           
-                           <p>Hay que empezar por el principio, ¿qué es un hábito de estudio y cómo se llega este?, ¿es algo con lo que se nace o es una habilidad que se adquiere y fortalece con el tiempo?, y, sobre todo, ¿por qué son importantes?</p>
-                           <p style="text-indent: 40px;">Los hábitos de estudio son un conjunto de rutinas y técnicas que utilizan los estudiantes para adquirir y aprovechar al máximo los conocimientos que adquieren. Si bien hay algunos métodos generales que pueden ayudar a todos los estudiantes, las competencias de cada persona son diferentes, por lo que un buen hábito de estudio combina habilidades personales innatas con aquellas que se pueden fortalecer con el tiempo.</p>                           
-                           <p style="text-indent: 40px;">Por ejemplo, hay personas que se les facilita aprender con música (cantan lo que aprenden), esta sería una habilidad innata que podría combinarse con técnicas y hábitos de estudio generales, como organizar tiempos de estudio. Por eso es fundamental que cada persona conozca las aptitudes y herramientas con las que cuenta y le facilita el estudio.</p>
-                        </div>
-                     </article>
-                  </div>
+               <!-- Section[Devp][Best]: Habit02-A -->
+               <section id="Habit02-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab2.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>Hábito 2 - Planea por adelantado las actividades difíciles</h4>
 
-                  <div id="IsTheSame-A">
-                     <div class="Empty"></div>
-                     <article class="IsTheSame">
-                        <img src="SVG/Wave/Wave 09.svg" alt="Wave" class="Waves-09__I" width="100">
-                        <img src="SVG/Undraw/Friends.svg" alt="Friends" class="Friends__I" width="100">
-                        <div class="IsTheSame__Text Background">
-                           <h3>¿Es lo mismo,
-                           <br> las Técnicas y los Hábitos?</h3>
-                           
-                           <p>Los hábitos de estudios se enfocan más en crear hábitos de estudios positivos en las personas, ya sea cumplir un horario, mantener un ritmo de trabajo, estudiar en un espacio ordenado, etc.</p>                           
-                           <p style="text-indent: 40px;">En cambio, las técnicas de estudios son métodos implementados con el fin de mejorar el proceso de aprendizaje, favoreciendo la comprensión, memorización y rendimiento académico.</p>
-                        </div>
-                     </article>
-                  </div>
-
-                  <div id="HowDoesItWork-A">
-                     <div class="Empty"></div>
-                     <article class="HowDoesItWork">
-                        <img src="SVG/Wave/Wave 04.svg" alt="Wave" class="Brushstroke__I" width="100">
-                        <img src="SVG/Undraw/Healthy_Habit.svg" alt="Habit" class="HealthyHabit__I" width="100">
-                        <div class="HowDoesItWork__Text Background">
-                           <h3>¿Cómo funcionan los hábitos?</h3>
-                           
-                           <p>Los hábitos son simples elecciones que hacemos en determinados momentos.</p>
-
-                           <p style="text-indent: 40px;">Según los científicos, los hábitos aparecen porque nuestro cerebro está siempre buscando formas de ahorrar esfuerzos. Cuando haces algo rutinario, el cerebro no toma decisiones, se relaja y descansa. Esto es bueno porque nos despreocupamos de comportamientos básicos, como lavarse los dientes. Pero es malo cuando se trata de un hábito que no queremos: como el cerebro se desconecta, a menos que luches conscientemente contra el hábito, éste se seguirá produciendo automáticamente una y otra vez.</p>
-                              
-                           <p>Los hábitos funcionan en ciclos de tres pasos:</p>
-                           
-                           <p style="text-indent: 40px;">Primero se produce una señal, un detonante que avisa a tu cerebro para que seleccione el hábito correspondiente y se ponga en modo automático.</p>
-                           <p style="text-indent: 40px;">Después se desarrolla una rutina, que puede ser física, mental o emocional.</p>
-                           <p style="text-indent: 40px;">Al final hay una recompensa, que ayuda a tu cerebro a recordar ese comportamiento para el futuro.</p>
-                        </div>
-                     </article>
-                  </div>
-
-                  <div id="HowToCreate-A">
-                     <div class="Empty"></div>
-                     <article class="HowToCreate">
-                        <img src="SVG/Wave/Wave 10.svg" alt="Wave" class="Wave-10__II" width="100">
-                        <img src="SVG/Undraw/Faq.svg" alt="Faq" class="Faq__II" width="100">
-                        <div class="HowToCreate__Text Background">
-                           <h3>¿Cómo crear nuevos hábitos?</h3>
-
-                           <p>Para crear un hábito nuevo tienes que encontrar primero una señal de activación simple y, después, definir con claridad la recompensa. Por ejemplo, ponerte unas zapatillas de deporte en el mismo momento de llegar a tu casa después de trabajar, puede servir para crear el hábito de salir a correr. La recompensa podría ser la propia satisfacción que produce hacer ejercicio, o comerte después algún dulce mientras ves un programa de televisión que te guste.</p>
-
-                           <p>Normalmente, crear una señal y definir la recompensa no es suficiente. Si no, sería bastante sencillo hacer ejercicio, comer sano y organizarte productivamente. Lo que refuerza que el ciclo señal-rutina-recompensa se repita lo suficiente, es que exista un fuerte deseo de que llegue la recompensa. A veces, el hecho de asociar una señal a una recompensa hace que el deseo se vaya creando de manera inconsciente. Pero otras veces tendrás que averiguar la manera de despertar ese deseo.</p>
-                              
-                           <p>Un hábito, según las teorías cognitivas más actuales, no es únicamente una automatización, sino que incluye a la conciencia, las metas y la motivación del momento. El 40% de nuestras acciones diarias son producto de los hábitos adquiridos, asegura la Universidad de Duke.</p>
-                           
-                           <p>Dependiendo de la complejidad, incorporar un nuevo hábito puede demorar entre 18 y 254 días, aunque la mayoría logra hacerlo en 66 días, asegura un estudio de la University College London.</p>
-
-                           <p>Para consolidar un hábito de estudio es recomendable empezar con sesiones cortas, controlar influencias que afectan el rendimiento -smartphone, redes sociales- y trazar objetivos claros. Un informe de la Dominican University of California asegura que proponerte una meta aumenta tus chances de alcanzarla entre un 20 y un 30%.</p>
-
-                           <p><i>Cuando alcances pequeñas metas propuestas a la largo de la jornada, prémiate con un helado, una canción, una caminata corta o algo que mantenga tu motivación para seguir estudiando y llegar a la próxima recompensa.</i></p>
-                        </div>
-                     </article>
-                  </div>
-
-                  <div id="TheBestHabits-A">
-                     <div class="Empty"></div>
-                     <article class="TheBestHabits">
-
-                        <div id="Habit01-A">
-                           <div class="Empty"></div>
-                           <h3>Los mejores hábitos de estudio para lograr buenos resultados</h3>
-                           
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab1.jpg" alt="Img" width="50px" class="Img-HabRight">
-                              <h4>Hábito 1 - Planea tu día todas las mañanas</h4>
-
-                              <p>Entre los hábitos de estudiantes exitosos, sin duda alguna el más importante es organizar tiempos. Esto quiere decir que debes escoger el momento del día en el que te sientes con más energía y más animado para estudiar, y también debes organizar cuánto tiempo vas a estudiar por materia (en caso de que tengas varias).</p><br>
-
-                              <ul>
-                                 <li><b>Planifica tu tiempo de manera realista</b>
-                                    <p>Las técnicas para organizar y aprovechar el tiempo pueden ayudarte a tener más control en tu vida y conseguir tiempo de estudio más eficaz, y por tanto disponer de más tiempo libre. </p>
-                                 </li>
-                                 
-                                 <li><b>Estructura tu Horario</b>
-                                    <p>Estructura tu horario académico como si fueran 40 horas semanales de trabajo; después de todo, estudiar es tu actividad principal. Si un día no cumples las horas previstas, recuerda que tendrás que recuperarlas al día siguiente.</p>
-                                 </li>
-                                 
-                                 <li><b>Utiliza un Calendario</b>
-                                    <p>Utiliza un calendario para registrar todas las actividades de horario regular y las fechas asignadas para exámenes y trabajos. Incluye tiempo para dormir, hacer ejercicios físicos y actividades sociales. Es difícil aprender estando aturdidos o agotados.</p>
-                                 </li>
-                                 
-                                 <li><b>El mejor lugar y momento del día</b>
-                                    <p>Determina el mejor lugar y momento del día para estudiar. Lo ideal es estudiar sin distracciones (televisión, ruidos, olores, etc.), en un lugar ordenado, bien aireado y con buena luz, y disponiendo de un asiento cómodo.</p>
-                                 </li>
-                              </ul>
-                              
-                           </article>
-                        </div>
-
-                        <div id="Habit02-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab2.jpg" alt="Img" width="50px" class="Img-HabLeft">
-                              <h4>Hábito 2 - Planea por adelantado las actividades difíciles</h4>
-
-                              <p>Divide los trabajos muy extensos o complicados en sub-tareas o etapas más pequeñas y manejables; te permitirá ir avanzando, sin agobiarte con tanto volumen de trabajo.</p>
-                              
-                           </article>
-                        </div>
-
-                        <div id="Habit03-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab3.jpg" alt="Img" width="50px" class="Img-HabRight">
-                              <h4>Hábito 3 - Construye tu ambiente ideal de estudio</h4>
-
-                              <p>El espacio físico donde decidas estudiar facilitará o dificultará la concentración, por ello es importante buscar el lugar más apropiado para poder estudiar y sacar el máximo provecho de las horas invertidas.</p>
-
-                              <p>A continuación, puedes conocer los aspectos más relevantes para conseguir un buen ambiente de estudio.</p><br>
-
-                              <ol>
-                                 <li><b>Busca un lugar con una buena iluminación.</b>
-                                    <p>Las técnicas para organizar y aprovechar el tiempo pueden ayudarte a tener más control en tu vida y conseguir tiempo de estudio más eficaz, y por tanto disponer de más tiempo libre. </p>
-                                 </li>
-                                 
-                                 <li><b>Prepara un espacio solo para estudiar.</b>
-                                    <p> ¿Hay alguna habitación vacía en tu casa? Pues este es el espacio de estudio ideal. Estudiar en un sitio distinto a la cocina o el dormitorio aumenta la concentración: no pensamos ni en comer ni en dormir. Si no es posible, elige tu habitación: es un escenario cómodo para ti.</p>
-                                 </li>
-                                 
-                                 <li><b>Utiliza un asiento adecuado.</b>
-                                    <p>Muchas horas de estudio pueden afectar nuestros hábitos postulares. En este sentido, es útil usar una silla blanda con ruedas. La clave es mantener siempre la espalda recta y estudiar con los pies tocando el suelo. Por suerte, este tipo de asientos suelen ser regulables.</p>
-                                 </li>
-                                 
-                                 <li><b>Aíslate de los ruidos.</b>
-                                    <p>Procura elegir el espacio menos concurrido de la casa. Si ves que la música de los vecinos puede convertirse en un problema, siempre puedes utilizar tapones para los oídos. También puedes hablar con tus familiares y pedirles que hagan el menor ruido posible: ¡nada de poner la tele alta!</p>
-                                 </li>
-                                 
-                                 <li><b>Mantén el orden.</b>
-                                    <p>¿Te imaginas un espacio de estudio lleno de apuntes arrugados, objetos para tirar y otros artilugios innecesarios? Seguramente, te resultaría imposible concentrarte. Ordena el escritorio antes de empezar y ventila la habitación: un olor agradable también es fundamental para sentirse a gusto.</p>
-                                 </li>
-                              </ol>
-                              
-                           </article>
-                        </div>
-
-                        <div id="Habit04-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab4.jpg" alt="Img" width="50px" class="Img-HabLeft">
-                              <h4>‌Hábito 4 - Estudia en intervalos (POMODORO)‌</h4>
-
-                              <p>Estudiar durante horas puede ser agotador, y después de un tiempo sin descansos nuestro cerebro puede fatigarse, es por eso que lo ideal es tomar descansos a medida que vas estudiando.</p>
-
-                              <p>Por ejemplo, por cada 25 minutos de estudio, puedes descansar 5 minutos. Esto ayuda a que tu cerebro recargue la pila y se le conoce como la técnica Pomodoro para estudiar.</p>
-
-                              <p>Lo recomendable es tomarse al menos 10 minutos de descanso por cada 50 minutos de estudio. Después del descanso, verás como vuelves a estar en disposición para seguir aprendiendo.</p>
-                           </article>
-                        </div>
-
-                        <div id="Habit05-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab5.jpg" alt="Img" width="50px" class="Img-HabRight">
-                              <h4>‌Hábito 5 - Toma notas de forma inteligente‌</h4>
-
-                              <ol>
-                                 <li><b>Método Cornell</b>
-                                    
-                                    <p>El método Cornell es una de las técnicas más populares para tomar apuntes y consiste básicamente en dividir nuestros apuntes en 3 secciones principales.</p>
-                                    <p>La columna derecha corresponde al área general donde el alumno debe reflejar las ideas más importantes que el profesor va explicando durante la clase. Es importante que intentemos resumir lo máximo posible y que seamos inteligentes a la hora de escribir.</p>
-                                    <p>El área izquierda sirve para ir completando los apuntes principales, escribiendo notas al margen que nos ayuden a comprender y a relacionar las distintas partes de nuestros apuntes. Esta sección puede desarrollarse durante la propia clase o al final de la misma.</p>
-                                    <p>El área inferior debe dejarse en blanco durante la clase, ya que está pensada para ser usada cuando estemos repasando/estudiando. En este momento, no tendremos la presión de seguir el ritmo de la clase y escribir rápido, por lo que debemos intentar elaborar un pequeño resumen de los puntos clave en la hoja de apuntes y dotarlo de una mayor organización.</p>
-                                 </li><br>
-
-                                 <li><b>Método de la página dividida</b>
-                                    <p>Este método tiene ciertas similitudes con el anterior aunque, realmente, sigue un principio totalmente diferente. La idea es dividir la página verticalmente en dos secciones: las ideas principales y las secundarias.</p>
-                                    <p>Así, mientras tomamos apuntes, vamos organizando de manera simultánea nuestra materia. Este método puede requerir algo de adaptación al principio pero, a largo plazo, nos ayudará a optimizar  mejor nuestro tiempo a la hora de estudiar usando nuestros apuntes.
-                                    </p>
-                                 </li><br>
-
-                                 <li><b>Utilización de recursos visuales</b>
-                                    <p>Tomar Apuntes con mapas mentales. Este método se basa en la utilización de recursos visuales para aprovechar la forma natural en la que el cerebro procesa la información.</p>
-                                    <p>Consiste en utilizar una gran cantidad de dibujos, gráficas, esquemas, etc. de manera que vayamos siguiendo la explicación de manera secuencial sin necesidad de escribir párrafos largos.</p>
-                                    <p>La utilización de colores y otros elementos visuales como letras de distintos tamaños también favorece las conocidas como supernotas. En este sentido, los mapas mentales se están convirtiendo en uno de los recursos más extendidos para este tipo de apuntes, ya que permiten desarrollar ideas y conexiones de manera sencilla a la vez que visual.</p>
-                                 </li>
-                              </ol>
-                           </article>
-                        </div>
-
-                        <div id="Habit06-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab6.jpg" alt="Img" width="50px" class="Img-HabLeft">
-                              <h4>‌Hábito 6 - Lee de manera inteligente</h4>
-
-                              <ul>
-                                 <li>
-                                    <p><b>Subrayar:</b> marcar ideas o palabras destacadas.</p>
-                                 </li>
-                                 <li>
-                                    <p><b>Preguntarse:</b> realizarse preguntas sobre el capítulo leído, para fomentar el recuerdo.</p>
-                                 </li>
-                                 <li>
-                                    <p><b>Reseñar:</b> escribir una breve reseña del texto  al culminarlo, con los conceptos más importantes.</p>
-                                 </li>
-                              </ul>
-
-                              <p>Además, uno de los hábitos más recomendables para quienes deseen mejorar sus habilidades de lectura es contar con un diccionario al alcance de la mano. De este modo, se podrán despejar al instante las dudas lingüísticas.</p>
-                              <p>Pero sin lugar a dudas, el mejor consejo para alguien que desea ser un mejor lector es sencillamente el de leer tanto como se pueda para poco a poco y de manera silenciosa mejorar esta capacidad.</p>
-                           </article>
-                        </div>
-
-                        <div id="Habit07-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab7.jpg" alt="Img" width="50px" class="Img-HabRight">
-                              <h4>‌‌Hábito 7 - Crea tu propia guía de estudio</h4>
-                              <br>
-                              <ol style="list-style-type: lower-greek;">
-                                 <li><b>Elegir una forma</b>
-                                    <p>Determinar el formato a usar, dependiendo de los métodos que te resulten más útiles. Este paso implica determinar si utilizarás o no colores, si emplearás esquemas, si vas a organizar la información de forma cronológica o alfabética, etc.</p>
-                                 </li>
-                                 
-                                 <li><b>Reducir</b>
-                                    <p>Reduce el material a su mínima expresión, colocando apenas las ideas fundamentales sobre cada temática para así tener más organización y menos exceso de información.</p>
-                                 </li>
-                                 
-                                 <li><b>Conectar</b>
-                                    <p>Conecta las ideas principales con las secundarias, de forma de priorizar lo realmente importante y al mismo tiempo comprender cómo se vincula cada concepto dentro de un mismo tema, y los temas entre ellos.</p>
-                                 </li>
-
-                                 <li><b>Postular</b>
-                                    <p>Plantea posibles preguntas que pueden surgir en el examen, atendiendo a los puntos más importantes de cada asignatura.</p>
-                                 </li>
-
-                                 <li><b>Repasar</b>
-                                    <p>Lee cada temática con la guía terminada, de este modo, podrás probar si efectivamente funciona y si logras terminar cada apartado con una idea clara de cada tema.</p>
-                                 </li>
-                              </ol>
-                           </article>
-                        </div>
-
-                        <div id="Habit08-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab8.jpg" alt="Img" width="50px" class="Img-HabLeft">
-                              <h4>‌Hábito 8 - Repasa de forma activa</h4>
-
-                              <ul>
-                                 <li><b>Fase 1: Repasos iniciales</b>
-                                    <p>Trata de repasar justo después de memorizar un tema y de forma muy activa. Como mucho, espácialo un día desde que lo estudiaste ¡recuerda que olvidamos el 50% en 1 día!</p>
-                                    <p>El proceso sería: estudia, repasa, comprueba y corrige.</p>
-                                    <p>Si te atascas en los repasos iniciales, no te preocupes, todavía no tienes dominado totalmente el tema. Pero para eso están las siguientes fases de repaso.</p>
-                                    <p>Estos repasos iniciales sirven para anclar la información al cerebro y que éste no la deseche. En el siguiente paso nos encargaremos de fortalecer el recuerdo.</p>
-                                    <p>Lo ideal es estudiar la información memorizada 2 veces ese mismo día. Si no puedes, intenta que al menos sea 1 vez. Pero esto dependerá de la práctica que tengas en el estudio.</p>
-                                 </li><br>
-                                 
-                                 <li><b>Fase 2: Repasos intermedios</b>
-                                    <p>Estos son los que te llevarán más tiempo. Ya que en los iniciales sólo necesitabas anclar la información y en los finales sólo necesitarás refrescarla. Pero en los intermedios hay que hacer mucho énfasis.</p>
-                                    <p>Ahora empezarás a fortalecer el recuerdo para que el cerebro considere necesaria esa información y la pase a la memoria a largo plazo.</p>
-                                    <p>El objetivo principal de los repasos en esta fase será afianzar los contenidos de tal forma que seas capaz de reproducir cada tema a la perfección.</p>
-                                    <p>Si caes una y otra vez en los mismos errores puedes estar frente a un fallo en la comprensión. Ve al temario e intenta solucionarlo pero nunca te quedes con la duda.</p>
-                                 </li><br>
-
-                                 <li><b>Fase 3: Repasos finales</b>
-                                    <p>Estos deben ser los más sencillos y se hacen cuando faltan 2 o 3 días para el examen (si empezaste a estudiar hace mucho). O el día anterior si no llevas tanto tiempo estudiando.</p>
-                                    <p>El objetivo es comprobar que no haya fallos, refrescar lo que ya sabes y ultimar con aquellos conceptos que aún te cuesten un poco.</p>
-                                 </li>
-                              </ul>
-                           </article>
-                        </div>
-
-                        <div id="Habit09-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab9.jpg" alt="Img" width="50px" class="Img-HabRight">
-                              <h4>‌Hábito 9 - Duerme lo suficiente</h4>
-
-                              <p>Dormir bien ayuda al aprendizaje, porque cuando duermes, tu cerebro y cuerpo entran en un estado de reposo, restauración y reparación. Es entonces cuando se produce una función de regeneración en tu mente y cuerpo.</p>
-                              <p>Se estima que durante el sueño el cerebro procesa la información más relevante de manera organizada y apropiando mejor los conocimientos aprendidos.  Existen estudios que demuestran que cuando se duerme después de estudiar, la memoria se potencia y hay un mejor desempeño en el aprendizaje. Además, dormir fortalece tus defensas e impide que contraigas enfermedades.</p>
-                           </article>
-                        </div>
-
-                        <div id="Habit10-A">
-                           <div class="Empty"></div>
-                           <article class="Habit__Text Background-Sp">
-                              <img src="JPG/Hab10.jpg" alt="Img" width="50px" class="Img-HabLeft">
-                              <h4>Hábito 10 - Utiliza la reflexión y la retroalimentación</h4>
-
-                              <p>Cada que te encuentres con temas muy complicados es posible que te estanques y para salir de dudas hay varias cosas que puedes hacer.</p>
-                              <p>Primero utiliza la reflexión o la interrogación elaborativa que se lleva a cabo a través de preguntas para analizar el tema, no solo repitas la información pregúntate el que el ¿cómo?, ¿por qué?, ¿para qué?, ¿a qué me recuerda? Todo esto te ayuda a visualizar el tema desde diferentes ángulos hasta que haga clic y comprendas correctamente algo muy complicado.</p>
-                              <p>Segundo utiliza la retroalimentación aquí es en donde pides ayuda a compañeros o algún profesor para comparar tu propia comprensión junto con la de otras personas, al conocer diferentes puntos de vista o al estudiar en equipo te das cuenta de las cosas que entendiste mal y las puedes corregir a tiempo, si no pides ayuda en temas difíciles o no reflexionas en cómo lo puedes comprender mejor puedes caer en la ilusión del conocimiento y puedes tener la sensación de que ya lo sabes pero en realidad no está comprendiendo muchas cosas.</p>
-                           </article>
-                        </div>
-                     </article>
-                  </div>
-
+                     <p>Divide los trabajos muy extensos o complicados en sub-tareas o etapas más pequeñas y manejables; te permitirá ir avanzando, sin agobiarte con tanto volumen de trabajo.</p>
+                     
+                  </article>
                </section>
-            </div>
-            
-            <div id="Conclusion">
-               <div class="Empty"></div>
-               <section class="Concl Background-Sp">
-                  <section>
-                     <h2>Conclusión</h2>
 
-                     <p>Los hábitos de estudio  son importantes para  tener una buena  experiencia educativa, además de que obtendrás un aprendizaje significativo y mejoraras tú rendimiento escolar. Al generar estos hábitos es necesario contar con un sentido de perseverancia, organización, paciencia y responsabilidad.  El estudio no sólo beneficia tu desarrollo intelectual también forja tu crecimiento social y personal.</p>
+               <!-- Section[Devp][Best]: Habit03-A -->
+               <section id="Habit03-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab3.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>Hábito 3 - Construye tu ambiente ideal de estudio</h4>
 
-                     <p>Además de los hábitos mencionados es importante destacar que para el buen funcionamiento de los hábitos de estudio es importante acompañarlos de otros para mantener una buena energía como hacer ejercicio, cuidar tú alimentación, hacer actividades recreativas y  crear relaciones positivas. Recuerda que no todo en la vida es productividad, los descansos son necesarios y saludables.</p>
-                  </section>
+                     <p>El espacio físico donde decidas estudiar facilitará o dificultará la concentración, por ello es importante buscar el lugar más apropiado para poder estudiar y sacar el máximo provecho de las horas invertidas.</p>
+
+                     <p>A continuación, puedes conocer los aspectos más relevantes para conseguir un buen ambiente de estudio.</p><br>
+
+                     <ol>
+                        <li><b>Busca un lugar con una buena iluminación.</b>
+                           <p>Las técnicas para organizar y aprovechar el tiempo pueden ayudarte a tener más control en tu vida y conseguir tiempo de estudio más eficaz, y por tanto disponer de más tiempo libre. </p>
+                        </li>
+                        
+                        <li><b>Prepara un espacio solo para estudiar.</b>
+                           <p> ¿Hay alguna habitación vacía en tu casa? Pues este es el espacio de estudio ideal. Estudiar en un sitio distinto a la cocina o el dormitorio aumenta la concentración: no pensamos ni en comer ni en dormir. Si no es posible, elige tu habitación: es un escenario cómodo para ti.</p>
+                        </li>
+                        
+                        <li><b>Utiliza un asiento adecuado.</b>
+                           <p>Muchas horas de estudio pueden afectar nuestros hábitos postulares. En este sentido, es útil usar una silla blanda con ruedas. La clave es mantener siempre la espalda recta y estudiar con los pies tocando el suelo. Por suerte, este tipo de asientos suelen ser regulables.</p>
+                        </li>
+                        
+                        <li><b>Aíslate de los ruidos.</b>
+                           <p>Procura elegir el espacio menos concurrido de la casa. Si ves que la música de los vecinos puede convertirse en un problema, siempre puedes utilizar tapones para los oídos. También puedes hablar con tus familiares y pedirles que hagan el menor ruido posible: ¡nada de poner la tele alta!</p>
+                        </li>
+                        
+                        <li><b>Mantén el orden.</b>
+                           <p>¿Te imaginas un espacio de estudio lleno de apuntes arrugados, objetos para tirar y otros artilugios innecesarios? Seguramente, te resultaría imposible concentrarte. Ordena el escritorio antes de empezar y ventila la habitación: un olor agradable también es fundamental para sentirse a gusto.</p>
+                        </li>
+                     </ol>
+                     
+                  </article>
                </section>
-            </div>
 
-            <div id="Tips">
-               <div class="Empty"></div>
-               <section class="Advice">
-                  <h2>Tips y Recomendaciones</h2>
+               <!-- Section[Devp][Best]: Habit04-A -->
+               <section id="Habit04-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab4.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>‌Hábito 4 - Estudia en intervalos (POMODORO)‌</h4>
 
-                  <div id="Apps">
-                     <div class="Empty"></div>
-                     <article class="Advice__Text Background-Sp">
+                     <p>Estudiar durante horas puede ser agotador, y después de un tiempo sin descansos nuestro cerebro puede fatigarse, es por eso que lo ideal es tomar descansos a medida que vas estudiando.</p>
+
+                     <p>Por ejemplo, por cada 25 minutos de estudio, puedes descansar 5 minutos. Esto ayuda a que tu cerebro recargue la pila y se le conoce como la técnica Pomodoro para estudiar.</p>
+
+                     <p>Lo recomendable es tomarse al menos 10 minutos de descanso por cada 50 minutos de estudio. Después del descanso, verás como vuelves a estar en disposición para seguir aprendiendo.</p>
+                  </article>
+               </section>
+
+               <!-- Section[Devp][Best]: Habit05-A -->
+               <section id="Habit05-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab5.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>‌Hábito 5 - Toma notas de forma inteligente‌</h4>
+
+                     <ol>
+                        <li><b>Método Cornell</b>
+                           
+                           <p>El método Cornell es una de las técnicas más populares para tomar apuntes y consiste básicamente en dividir nuestros apuntes en 3 secciones principales.</p>
+                           <p>La columna derecha corresponde al área general donde el alumno debe reflejar las ideas más importantes que el profesor va explicando durante la clase. Es importante que intentemos resumir lo máximo posible y que seamos inteligentes a la hora de escribir.</p>
+                           <p>El área izquierda sirve para ir completando los apuntes principales, escribiendo notas al margen que nos ayuden a comprender y a relacionar las distintas partes de nuestros apuntes. Esta sección puede desarrollarse durante la propia clase o al final de la misma.</p>
+                           <p>El área inferior debe dejarse en blanco durante la clase, ya que está pensada para ser usada cuando estemos repasando/estudiando. En este momento, no tendremos la presión de seguir el ritmo de la clase y escribir rápido, por lo que debemos intentar elaborar un pequeño resumen de los puntos clave en la hoja de apuntes y dotarlo de una mayor organización.</p>
+                        </li><br>
+
+                        <li><b>Método de la página dividida</b>
+                           <p>Este método tiene ciertas similitudes con el anterior aunque, realmente, sigue un principio totalmente diferente. La idea es dividir la página verticalmente en dos secciones: las ideas principales y las secundarias.</p>
+                           <p>Así, mientras tomamos apuntes, vamos organizando de manera simultánea nuestra materia. Este método puede requerir algo de adaptación al principio pero, a largo plazo, nos ayudará a optimizar  mejor nuestro tiempo a la hora de estudiar usando nuestros apuntes.
+                           </p>
+                        </li><br>
+
+                        <li><b>Utilización de recursos visuales</b>
+                           <p>Tomar Apuntes con mapas mentales. Este método se basa en la utilización de recursos visuales para aprovechar la forma natural en la que el cerebro procesa la información.</p>
+                           <p>Consiste en utilizar una gran cantidad de dibujos, gráficas, esquemas, etc. de manera que vayamos siguiendo la explicación de manera secuencial sin necesidad de escribir párrafos largos.</p>
+                           <p>La utilización de colores y otros elementos visuales como letras de distintos tamaños también favorece las conocidas como supernotas. En este sentido, los mapas mentales se están convirtiendo en uno de los recursos más extendidos para este tipo de apuntes, ya que permiten desarrollar ideas y conexiones de manera sencilla a la vez que visual.</p>
+                        </li>
+                     </ol>
+                  </article>
+               </section>
+
+               <!-- Section[Devp][Best]: Habit06-A -->
+               <section id="Habit06-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab6.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>‌Hábito 6 - Lee de manera inteligente</h4>
+
+                     <ul>
+                        <li>
+                           <p><b>Subrayar:</b> marcar ideas o palabras destacadas.</p>
+                        </li>
+                        <li>
+                           <p><b>Preguntarse:</b> realizarse preguntas sobre el capítulo leído, para fomentar el recuerdo.</p>
+                        </li>
+                        <li>
+                           <p><b>Reseñar:</b> escribir una breve reseña del texto  al culminarlo, con los conceptos más importantes.</p>
+                        </li>
+                     </ul>
+
+                     <p>Además, uno de los hábitos más recomendables para quienes deseen mejorar sus habilidades de lectura es contar con un diccionario al alcance de la mano. De este modo, se podrán despejar al instante las dudas lingüísticas.</p>
+                     <p>Pero sin lugar a dudas, el mejor consejo para alguien que desea ser un mejor lector es sencillamente el de leer tanto como se pueda para poco a poco y de manera silenciosa mejorar esta capacidad.</p>
+                  </article>
+               </section>
+
+               <!-- Section[Devp][Best]: Habit07-A -->
+               <section id="Habit07-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab7.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>‌‌Hábito 7 - Crea tu propia guía de estudio</h4>
+                     <br>
+                     <ol style="list-style-type: lower-greek;">
+                        <li><b>Elegir una forma</b>
+                           <p>Determinar el formato a usar, dependiendo de los métodos que te resulten más útiles. Este paso implica determinar si utilizarás o no colores, si emplearás esquemas, si vas a organizar la información de forma cronológica o alfabética, etc.</p>
+                        </li>
+                        
+                        <li><b>Reducir</b>
+                           <p>Reduce el material a su mínima expresión, colocando apenas las ideas fundamentales sobre cada temática para así tener más organización y menos exceso de información.</p>
+                        </li>
+                        
+                        <li><b>Conectar</b>
+                           <p>Conecta las ideas principales con las secundarias, de forma de priorizar lo realmente importante y al mismo tiempo comprender cómo se vincula cada concepto dentro de un mismo tema, y los temas entre ellos.</p>
+                        </li>
+
+                        <li><b>Postular</b>
+                           <p>Plantea posibles preguntas que pueden surgir en el examen, atendiendo a los puntos más importantes de cada asignatura.</p>
+                        </li>
+
+                        <li><b>Repasar</b>
+                           <p>Lee cada temática con la guía terminada, de este modo, podrás probar si efectivamente funciona y si logras terminar cada apartado con una idea clara de cada tema.</p>
+                        </li>
+                     </ol>
+                  </article>
+               </section>
+
+               <!-- Section[Devp][Best]: Habit08-A -->
+               <section id="Habit08-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab8.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>‌Hábito 8 - Repasa de forma activa</h4>
+
+                     <ul>
+                        <li><b>Fase 1: Repasos iniciales</b>
+                           <p>Trata de repasar justo después de memorizar un tema y de forma muy activa. Como mucho, espácialo un día desde que lo estudiaste ¡recuerda que olvidamos el 50% en 1 día!</p>
+                           <p>El proceso sería: estudia, repasa, comprueba y corrige.</p>
+                           <p>Si te atascas en los repasos iniciales, no te preocupes, todavía no tienes dominado totalmente el tema. Pero para eso están las siguientes fases de repaso.</p>
+                           <p>Estos repasos iniciales sirven para anclar la información al cerebro y que éste no la deseche. En el siguiente paso nos encargaremos de fortalecer el recuerdo.</p>
+                           <p>Lo ideal es estudiar la información memorizada 2 veces ese mismo día. Si no puedes, intenta que al menos sea 1 vez. Pero esto dependerá de la práctica que tengas en el estudio.</p>
+                        </li><br>
+                        
+                        <li><b>Fase 2: Repasos intermedios</b>
+                           <p>Estos son los que te llevarán más tiempo. Ya que en los iniciales sólo necesitabas anclar la información y en los finales sólo necesitarás refrescarla. Pero en los intermedios hay que hacer mucho énfasis.</p>
+                           <p>Ahora empezarás a fortalecer el recuerdo para que el cerebro considere necesaria esa información y la pase a la memoria a largo plazo.</p>
+                           <p>El objetivo principal de los repasos en esta fase será afianzar los contenidos de tal forma que seas capaz de reproducir cada tema a la perfección.</p>
+                           <p>Si caes una y otra vez en los mismos errores puedes estar frente a un fallo en la comprensión. Ve al temario e intenta solucionarlo pero nunca te quedes con la duda.</p>
+                        </li><br>
+
+                        <li><b>Fase 3: Repasos finales</b>
+                           <p>Estos deben ser los más sencillos y se hacen cuando faltan 2 o 3 días para el examen (si empezaste a estudiar hace mucho). O el día anterior si no llevas tanto tiempo estudiando.</p>
+                           <p>El objetivo es comprobar que no haya fallos, refrescar lo que ya sabes y ultimar con aquellos conceptos que aún te cuesten un poco.</p>
+                        </li>
+                     </ul>
+                  </article>
+               </section>
+
+               <!-- Section[Devp][Best]: Habit09-A -->
+               <section id="Habit09-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab9.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>‌Hábito 9 - Duerme lo suficiente</h4>
+
+                     <p>Dormir bien ayuda al aprendizaje, porque cuando duermes, tu cerebro y cuerpo entran en un estado de reposo, restauración y reparación. Es entonces cuando se produce una función de regeneración en tu mente y cuerpo.</p>
+                     <p>Se estima que durante el sueño el cerebro procesa la información más relevante de manera organizada y apropiando mejor los conocimientos aprendidos.  Existen estudios que demuestran que cuando se duerme después de estudiar, la memoria se potencia y hay un mejor desempeño en el aprendizaje. Además, dormir fortalece tus defensas e impide que contraigas enfermedades.</p>
+                  </article>
+               </section>
+
+               <!-- Section[Devp][Best]: Habit10-A -->
+               <section id="Habit10-A">
+                  <div class="Empty"></div>
+                  <article class="Habit__Text Glass">
+                     <img src="JPG/Hab10.jpg" alt="Img" width="50px" class="Img-Jpg">
+                     <h4>Hábito 10 - Utiliza la reflexión y la retroalimentación</h4>
+
+                     <p>Cada que te encuentres con temas muy complicados es posible que te estanques y para salir de dudas hay varias cosas que puedes hacer.</p>
+                     <p>Primero utiliza la reflexión o la interrogación elaborativa que se lleva a cabo a través de preguntas para analizar el tema, no solo repitas la información pregúntate el que el ¿cómo?, ¿por qué?, ¿para qué?, ¿a qué me recuerda? Todo esto te ayuda a visualizar el tema desde diferentes ángulos hasta que haga clic y comprendas correctamente algo muy complicado.</p>
+                     <p>Segundo utiliza la retroalimentación aquí es en donde pides ayuda a compañeros o algún profesor para comparar tu propia comprensión junto con la de otras personas, al conocer diferentes puntos de vista o al estudiar en equipo te das cuenta de las cosas que entendiste mal y las puedes corregir a tiempo, si no pides ayuda en temas difíciles o no reflexionas en cómo lo puedes comprender mejor puedes caer en la ilusión del conocimiento y puedes tener la sensación de que ya lo sabes pero en realidad no está comprendiendo muchas cosas.</p>
+                  </article>
+               </section>
+
+            </section>
+
+         </section>
+         
+         <!-- Section: Conclusion -->
+         <section id="Conclusion">
+            <div class="Empty"></div>
+            <article class="Concl TextBox">
+               <div class="Glass">
+                  <h2>Conclusión</h2>
+
+                  <p>Los hábitos de estudio son importantes para tener una buena experiencia educativa, además de que obtendrás un aprendizaje significativo y mejoraras tú rendimiento escolar. Al generar estos hábitos es necesario contar con un sentido de perseverancia, organización, paciencia y responsabilidad. El estudio no sólo beneficia tu desarrollo intelectual también forja tu crecimiento social y personal.</p>
+
+                  <p>Además de los hábitos mencionados es importante destacar que para el buen funcionamiento de los hábitos de estudio es importante acompañarlos de otros para mantener una buena energía como hacer ejercicio, cuidar tú alimentación, hacer actividades recreativas y crear relaciones positivas. Recuerda que no todo en la vida es productividad, los descansos son necesarios y saludables.</p>
+               </div>
+            </article>
+         </section>
+
+         <!-- Section: Tips -->
+         <section id="Tips">
+            <div class="Empty"></div>
+            <div class="Advice">
+               <h2>Tips y Recomendaciones</h2>
+
+               <!-- Section[Tips]: Apps -->
+               <section id="Apps">
+                  <div class="Empty"></div>
+                  <article class="Apps__Text TextBox">
+                     <div class="Glass">
                         <h3>Apps</h3>
                         <ul style="list-style-type: none;">
                            <li><b>Forest</b>
@@ -554,94 +501,240 @@
                            <li><b>Google Calendar</b>
                               <p>Google Calendar es un calendario online que ofrece Google gratuitamente a sus usuarios y que combina agenda, calendario electrónico, creador de eventos y otras funciones que nos facilita mejorar la productividad  y compartirlos con nuestros contactos.</p>
                            </li>
-                        </ul>      
-                     </article>
-                  </div>
+                        </ul>
+                     </div>
+                  </article>
+               </section>
 
-                  <div id="Books">
-                     <div class="Empty"></div>
-                     <article class="Advice__Text Background-Sp">
+               <!-- Section[Tips]: Books -->
+               <section id="Books">
+                  <div class="Empty"></div>
+                  <article class="Books__Text TextBox">
+                     <div class="Glass">
                         <h3>Libros</h3>
                         <ul>
                            <li><b>El Poder de los Hábitos Charles Duhigg</b>
                               <p><a href="https://facilethings.com/blog/es/the-power-of-habit">
-                                 Más info. aquí
+                                 Más info.
                               </a></p>
                            </li>
                            
                            <li><b>Tiende tu cama William H. Mcraven</b>
                               <p><a href="https://altafidelidadmagazine.com.mx/libros/tiende-tu-cama-lecciones-para-cambiar-el-mundo/">
-                                 Más info. aquí
+                                 Más info.
                               </a></p>
                            </li>
                            
                            <li><b>El club de las 5am  Robin S. Sharma</b>
                               <p><a href="https://juditcatala.com/el-club-de-las-5-am-de-robin-sharma-resumen-libro/">
-                                 Más info. aquí
+                                 Más info.
                               </a></p>
                            </li>
+                           
                            <li><b>La técnica Pomodoro Francesco Cirillo</b>
                               <p><a href="https://www.workmeter.com/blog/tecnica-pomodoro-si-o-no/">
-                                 Más info. aquí
+                                 Más info.
                               </a></p>
                            </li>
                         </ul>
-                     </article>
-                  </div>
+                     </div>
+                  </article>
+               </section>
 
-                  <div id="More">
-                     <div class="Empty"></div>
-                     <div class="Grid-Container Background-Sp">
-                        <h3>Vídeos</h3>
+               <!-- Section[Tips]: Videos -->
+               <section id="Videos">
+                  <div class="Empty"></div>
+                  <article class="Videos Grid-Videos">
+                     <h3>Vídeos</h3>
+                     <div class="Wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/OY-2sYEQsjE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                     <div class="Wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/TOcxLWkd9Po" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                     <div class="Wrapper">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Fitza6Z1VKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/ZGJizJsSF8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                      </div>
-                  </div>
+                     <div class="Wrapper">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZGJizJsSF8A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                     </div>
+                  </article>
                </section>
+
             </div>
+         </section>
+      </main>
+   
+      <!-- ===== Aside ==== -->
+      <aside class="Menu Glass">
+         <div>
+            <h4>Tabla de Contenidos:</h4>
+            <ul class="Menu-Links">
+               <li><a href="#Introduction">Introducción</a></li>
+               
+               <li><a href="#Development">Desarrollo</a></li>
+               
+               <ul class="SecondSubList">
+                  <li><a href="#WhatAre-A">
+                     ¿Qué son los hábitos de estudio?</a>
+                  </li>
+                  <li><a href="#IsTheSame-A">
+                     ¿Es lo mismo, las Técnicas y los Hábitos?</a>
+                  </li>
+                  <li><a href="#HowDoesItWork-A">
+                     ¿Cómo funcionan los hábitos?</a>
+                  </li>
+                  <li><a href="#HowToCreate-A">
+                     ¿Cómo crear nuevos hábitos?</a>
+                  </li>
+                  <li><a href="#TheBestHabits-A">
+                     Los mejores hábitos de estudio para lograr buenos resultados.</a>
+                  </li>
+                  <ol class="ThirdSubList">
+                     <li><a href="#Habit01-A">
+                        Planea tu día todas las mañanas</a>
+                     </li>
+                     <li><a href="#Habit02-A">
+                        Planea por adelantado las actividades difíciles</a>
+                     </li>
+                     <li><a href="#Habit03-A">
+                        Construye tu ambiente ideal de estudio</a>
+                     </li>
+                     <li><a href="#Habit04-A">
+                        Estudia en intervalos (Pomodoro)</a>
+                     </li>
+                     <li><a href="#Habit05-A">
+                        Toma notas de forma inteligente</a>
+                     </li>
+                     <li><a href="#Habit06-A">
+                        Lee de manera inteligente</a>
+                     </li>
+                     <li><a href="#Habit07-A">
+                        Crea tu propia guía de estudio</a>
+                     </li>
+                     <li><a href="#Habit08-A">
+                        Repasa de forma activa</a>
+                     </li>
+                     <li><a href="#Habit09-A">
+                        Duerme lo suficiente</a>
+                     </li>
+                     <li><a href="#Habit10-A">
+                        Utiliza la reflexión y la retroalimentación</a>
+                     </li>
+                  </ol>
+               </ul>
+               
+               <li><a href="#Conclusion">Conclusión</a></li>
+               
+               <li><a href="#Tips">Tips y Recomendaciones</a></li>
+               
+               <ul class="SecondSubList">
+                  <li><a href="#Apps">Apps</a></li>
+                  <li><a href="#Books">Libros</a></li>
+                  <li><a href="#Videos">Vídeos</a></li>
+               </ul>
+            </ul>
          </div>
-         
-      </div>
-      
-      <!-- About Us -->
-      <div id="About">
-         <div class="Empty"></div>
-         <section class="About Background-Sp">
+      </aside>
+
+   </div>
+
+   <!-- About Us -->
+   <div id="About">
+      <div class="Empty"></div>
+      <div class="About">
+         <div class="About__Text Glass">
             <h2>Somos</h2>
             
             <p>StudyWeb, es un página, un proyecto escolar de dos estudiantes de 5º grado de preparatoria, Brayan Mejía Mora y Hadara Sangabriel Jiménez; nosotros decidimos hacer una página web, principalmente como proyecto final de nuestra capacitación, pero no solo eso, queríamos ver cuánto de los conocimientos que adquirimos podíamos utilizar y de qué forma; también porque las páginas web han estado tendencia estos años con sus nuevas funciones y formar de crear webs.</p>
             
-            <p>Tanto yo como mi compañera y amiga, nos gustan todos los temas relacionados con la memoria, el aprendizaje, las técnicas, las habilidades, entre otros aspectos; que si uno quiere puede adquirir.
-               
+            <p>Tanto yo como mi compañera y amiga, nos gustan todos los temas relacionados con la memoria, el aprendizaje, las técnicas, las habilidades, entre otros aspectos; que si uno quiere puede adquirir.</p>
+            
             <p>El tema que al final decimos mostrar en la web, fue sobre los hábitos de estudio, principalmente porque es un tema fácil de entender y muy poderoso si se sabe usar. Hábitos, los hábitos todo mundo los tiene, pero los hábitos de estudio, aunque la mayoría entienda su valor no los utiliza, a veces no porque no lo haya intentado sino porque no lo hizo de forma correcta, pero con la anterior información sabes cómo y hasta tener un aproximado para realmente adquirir un hábito, además de un listado de hábitos que nosotros consideramos los más importantes.</p>
-         </section>
+         </div>
+
+         <div class="Tree-Svg">
+            <svg id="Tree-swing" width="856" height="677" viewBox="0 0 856 677" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <rect width="856" height="677" fill="transparent"/>
+               <g clip-path="url(#clip0)">
+                  <path id="Vector" d="M3.05176e-05 674.006H806V676.006H3.05176e-05V674.006Z" fill="#3F3D56"/>
+                  <g id="Girl-Swing">
+                     <path id="Vector_8" d="M258 584.853H260V366.006C259.999 365.114 260.197 364.234 260.58 363.428C260.962 362.623 261.52 361.914 262.213 361.352L260.949 359.802C260.026 360.55 259.282 361.496 258.772 362.57C258.262 363.643 257.998 364.817 258 366.006V584.853Z" fill="#3F3D56"/>
+                     <path id="Vector_9" d="M236.57 530.01C236.57 530.01 225.258 518.143 220.629 520.531C215.999 522.918 233.94 533.53 233.94 533.53L236.57 530.01Z" fill="#FFB9B9"/>
+                     <path id="Vector_10" opacity="0.1" d="M236.57 530.01C236.57 530.01 225.258 518.143 220.629 520.531C215.999 522.918 233.94 533.53 233.94 533.53L236.57 530.01Z" fill="black"/>
+                     <path id="Vector_11" d="M271.084 504.109C271.084 504.109 275.242 511.562 274.154 519.597C273.066 527.632 263.115 553.415 259.732 552.956C256.349 552.498 231.289 534.032 231.289 534.032L236.068 527.359L254.375 538.451C254.375 538.451 257.164 498.779 271.084 504.109Z" fill="#D0CDE1"/>
+                     <path id="Vector_12" d="M203.202 522.253L231.742 537.93C231.907 538.04 232.095 538.112 232.291 538.142C232.487 538.171 232.688 538.157 232.878 538.101C233.069 538.045 233.245 537.948 233.394 537.816C233.543 537.685 233.661 537.522 233.74 537.34L240.731 522.727C240.864 522.31 240.842 521.86 240.671 521.458C240.499 521.056 240.189 520.729 239.796 520.536L216.101 508.323C215.81 508.147 215.463 508.086 215.129 508.149C214.794 508.213 214.495 508.398 214.288 508.669L202.453 519.82C202.336 520.028 202.263 520.257 202.238 520.494C202.213 520.73 202.236 520.97 202.306 521.197C202.376 521.425 202.491 521.636 202.646 521.817C202.8 521.999 202.989 522.147 203.202 522.253V522.253Z" fill="#2F2E41"/>
+                     <path id="Vector_13" d="M205.107 520.094L231.862 535.387L238.982 522.555L216.03 510.073L205.107 520.094Z" fill="#00BFA6"/>
+                     <path id="Vector_14" d="M227.555 515.674C227.416 515.507 227.418 515.276 227.561 515.157C227.703 515.038 227.931 515.077 228.071 515.244C228.21 515.411 228.208 515.643 228.065 515.762C227.923 515.88 227.694 515.841 227.555 515.674Z" fill="#F2F2F2"/>
+                     <path id="Vector_15" d="M217.707 528.731C217.614 528.62 217.616 528.465 217.711 528.386C217.806 528.307 217.958 528.333 218.051 528.444C218.144 528.556 218.142 528.71 218.047 528.789C217.952 528.869 217.8 528.842 217.707 528.731Z" fill="#F2F2F2"/>
+                     <path id="Vector_16" opacity="0.1" d="M271.084 504.109C271.084 504.109 275.242 511.562 274.154 519.597C273.066 527.632 263.115 553.415 259.732 552.956C256.349 552.498 231.289 534.032 231.289 534.032L236.068 527.359L254.375 538.451C254.375 538.451 257.164 498.779 271.084 504.109Z" fill="black"/>
+                     <path id="Vector_17" d="M244.218 532.278C244.218 532.278 231.416 522.036 227.148 525.023C222.881 528.011 242.084 536.119 242.084 536.119L244.218 532.278Z" fill="#FFB9B9"/>
+                     <path id="Vector_18" d="M261.288 491.311C254.453 491.311 248.912 485.77 248.912 478.935C248.912 472.1 254.453 466.559 261.288 466.559C268.123 466.559 273.663 472.1 273.663 478.935C273.663 485.77 268.123 491.311 261.288 491.311Z" fill="#FFB9B9"/>
+                     <path id="Vector_19" d="M218.613 565.137C218.613 565.137 205.384 566.844 205.811 574.952C206.238 583.061 216.053 616.773 216.053 616.773L216.906 630.002C216.906 630.002 216.053 652.193 218.613 651.766C221.174 651.34 227.148 635.977 227.148 635.977C227.148 635.977 234.403 631.283 230.989 627.015C227.575 622.748 225.015 623.174 225.868 618.48C226.722 613.786 226.295 594.156 223.734 588.181C221.174 582.207 219.682 578.912 219.682 578.912L228.002 578.366L218.613 565.137Z" fill="#FFB9B9"/>
+                     <path id="Vector_20" opacity="0.1" d="M218.613 565.137C218.613 565.137 205.384 566.844 205.811 574.952C206.238 583.061 216.053 616.773 216.053 616.773L216.906 630.002C216.906 630.002 216.053 652.193 218.613 651.766C221.174 651.34 227.148 635.977 227.148 635.977C227.148 635.977 234.403 631.283 230.989 627.015C227.575 622.748 225.015 623.174 225.868 618.48C226.722 613.786 226.295 594.156 223.734 588.181C221.174 582.207 219.682 578.912 219.682 578.912L228.002 578.366L218.613 565.137Z" fill="black"/>
+                     <path id="Vector_21" d="M217.76 567.271C217.76 567.271 204.958 570.258 203.677 578.793C202.397 587.328 195.996 612.506 195.996 612.506L189.168 628.295C189.168 628.295 178.499 647.499 183.194 647.072C187.888 646.645 194.289 637.257 196.423 637.257C198.556 637.257 204.958 634.697 204.531 632.99C204.104 631.283 201.117 626.162 201.117 626.162L211.441 608.177C213.435 604.705 214.942 600.976 215.92 597.094C216.98 592.882 218.187 587.722 218.187 586.048C218.187 583.061 226.721 581.78 226.721 581.78L217.76 567.271Z" fill="#FFB9B9"/>
+                     <path id="Vector_22" d="M259.581 539.959L253.606 557.029C253.606 557.029 244.218 559.59 237.39 561.723C230.562 563.857 217.76 560.87 216.48 565.991C215.199 571.112 219.04 580.073 222.881 582.207C226.722 584.341 228.855 586.474 241.231 583.06C253.606 579.647 283.052 578.793 283.052 578.793C285.906 580.506 289.121 581.529 292.44 581.78C297.988 582.207 299.268 582.634 300.975 581.354C302.682 580.073 300.122 580.073 299.268 576.659C298.415 573.245 297.988 574.526 294.147 570.685C290.306 566.844 287.319 555.322 285.185 551.481C283.052 547.641 281.771 539.959 281.771 539.959H259.581Z" fill="#2F2E41"/>
+                     <path id="Vector_23" d="M260.434 489.177C261.985 490.309 263.253 491.784 264.141 493.486C265.029 495.189 265.513 497.072 265.555 498.992C265.555 505.393 278.358 492.164 278.358 492.164C278.358 492.164 271.53 483.629 271.53 481.069C271.53 478.508 260.434 489.177 260.434 489.177Z" fill="#FFB9B9"/>
+                     <path id="Vector_24" d="M276.651 486.616C276.651 486.616 268.969 489.604 267.262 493.871C265.555 498.138 259.154 507.1 259.154 507.1C259.154 507.1 250.193 516.488 253.18 526.73C256.167 536.972 258.727 539.533 258.727 541.24C258.727 542.947 262.995 545.934 266.409 545.507C269.823 545.08 282.625 543.373 283.479 541.666C284.332 539.959 289.453 515.635 286.039 506.673C283.27 499.825 280.136 493.13 276.651 486.616V486.616Z" fill="#D0CDE1"/>
+                     <path id="Vector_25" d="M257.698 479.498C254.929 480.155 252.211 478.391 249.942 476.641C248.653 475.648 247.235 474.231 247.63 472.633C247.98 471.214 249.651 470.41 249.895 468.969C250.064 467.967 249.478 466.993 249.431 465.977C249.473 465.203 249.727 464.456 250.165 463.817C250.603 463.178 251.208 462.671 251.915 462.353C253.264 461.627 254.794 461.324 256.181 460.674C258.297 459.681 260.057 457.891 262.317 457.317C265.406 456.534 268.55 458.202 271.726 458.418C273.647 458.548 275.593 458.143 277.494 458.458C279.307 458.825 280.944 459.791 282.14 461.201C283.337 462.611 284.024 464.383 284.091 466.232C284.116 467.59 283.844 469.105 284.655 470.182C284.975 470.553 285.34 470.884 285.741 471.166C288.564 473.449 289.846 477.264 289.992 480.939C290.064 482.748 289.685 484.897 288.08 485.666C287.22 485.96 286.312 486.087 285.405 486.038C284.949 486.019 284.495 486.111 284.083 486.308C283.672 486.505 283.314 486.799 283.043 487.166C282.312 488.455 283.407 490.36 282.451 491.485C281.732 492.331 280.331 492.05 279.492 491.33C278.654 490.609 278.13 489.573 277.335 488.803C275.788 487.305 273.494 487.033 271.374 486.806C270.745 486.801 270.134 486.6 269.625 486.232C269.24 485.828 268.989 485.314 268.908 484.762C268.629 483.49 268.625 482.174 268.897 480.901C269.032 480.507 269.049 480.082 268.946 479.679C268.806 479.392 268.589 479.149 268.32 478.978C267.006 477.99 264.704 476.553 262.996 476.825C261.101 477.127 259.61 479.044 257.698 479.498Z" fill="#2F2E41"/>
+                     <path id="Vector_26" d="M274.944 501.979C274.944 501.979 280.065 508.807 280.065 516.915C280.065 525.023 273.663 551.908 270.249 551.908C266.836 551.908 239.524 536.972 239.524 536.972L243.365 529.717L262.995 538.252C262.995 538.252 260.434 498.565 274.944 501.979Z" fill="#D0CDE1"/>
+                     <path id="Vector_27" d="M217 579.006H315V598.006H217V579.006Z" fill="#00BFA6"/>
+                     <path id="Vector_28" d="M266 599.006C268.121 599.003 270.154 598.16 271.654 596.66C273.154 595.16 273.998 593.127 274 591.006V366.006C274 364.493 273.571 363.011 272.763 361.732C271.955 360.454 270.801 359.43 269.435 358.781C268.068 358.131 266.546 357.882 265.044 358.063C263.542 358.244 262.122 358.847 260.949 359.802L262.213 361.352C263.093 360.636 264.158 360.184 265.284 360.049C266.41 359.913 267.552 360.1 268.577 360.587C269.601 361.074 270.467 361.842 271.073 362.801C271.679 363.76 272 364.871 272 366.006V591.006C271.998 592.596 271.366 594.122 270.241 595.246C269.116 596.371 267.591 597.004 266 597.006V599.006Z" fill="#3F3D56"/>
+                     <path id="Vector_29" d="M281.122 473.345C280.691 472.999 281.183 471.672 282.221 470.38C283.258 469.088 284.448 468.321 284.879 468.667C285.309 469.013 284.817 470.34 283.78 471.632C282.742 472.924 281.552 473.691 281.122 473.345Z" fill="#00BFA6"/>
+                  </g>
+                  <g id="High-Leaves">
+                     <path id="Vector_30" d="M564.43 172.047C565.551 190.01 579.165 203.779 579.165 203.779C579.165 203.779 590.962 188.424 589.84 170.461C588.719 152.497 575.105 138.728 575.105 138.728C575.105 138.728 563.309 154.083 564.43 172.047Z" fill="#00BFA6"/>
+                     <path id="Vector_31" d="M706.346 58.4851C691.121 68.0839 685.568 86.6339 685.568 86.6339C685.568 86.6339 704.699 89.621 719.924 80.0222C735.149 70.4233 740.703 51.8734 740.703 51.8734C740.703 51.8734 721.571 48.8862 706.346 58.4851Z" fill="#00BFA6"/>
+                     <path id="Vector_32" d="M740.346 277.485C725.121 287.084 719.568 305.634 719.568 305.634C719.568 305.634 738.699 308.621 753.924 299.022C769.149 289.423 774.703 270.873 774.703 270.873C774.703 270.873 755.571 267.886 740.346 277.485Z" fill="#00BFA6"/>
+                     <path id="Vector_33" d="M430.826 90.5011C435.418 107.904 451.449 118.764 451.449 118.764C451.449 118.764 460.035 101.409 455.444 84.0061C450.853 66.6033 434.822 55.7429 434.822 55.7429C434.822 55.7429 426.235 73.0983 430.826 90.5011Z" fill="#00BFA6"/>
+                     <path id="Vector_34" d="M285.991 104.071C291.387 121.241 307.907 131.343 307.907 131.343C307.907 131.343 315.676 113.607 310.28 96.4367C304.883 79.2664 288.364 69.1641 288.364 69.1641C288.364 69.1641 280.594 86.9003 285.991 104.071Z" fill="#00BFA6"/>
+                     <path id="Vector_35" d="M129.446 295.168C139.222 310.28 157.835 315.617 157.835 315.617C157.835 315.617 160.599 296.452 150.824 281.34C141.048 266.227 122.435 260.89 122.435 260.89C122.435 260.89 119.671 280.055 129.446 295.168Z" fill="#00BFA6"/>
+                  </g>
+                  <path id="Vector_36" d="M261.406 292.683C300.736 313.183 352.186 330.883 367.596 336.013C355.846 332.953 321.646 328.833 268.656 361.893C202.076 403.423 130.886 375.733 130.886 375.733C130.886 375.733 146.706 406.063 180.326 408.033C213.946 410.013 301.616 354.643 331.276 370.463C360.946 386.283 374.786 366.503 386.656 406.063C398.516 445.613 420.266 553.713 395.216 614.363L370.176 675.003H512.556C512.556 675.003 461.136 537.893 489.486 453.523C505.356 406.273 527.636 372.053 535.946 354.663C540.116 345.953 540.776 341.473 535.376 341.693C532.306 341.823 527.276 343.473 519.806 346.733C519.806 346.733 554.086 313.113 565.286 313.113C576.496 313.113 629.236 307.843 646.366 290.043C646.366 290.043 670.756 272.903 714.266 315.093C757.776 357.283 747.226 357.283 786.116 353.983C824.396 350.733 854.386 332.163 855.316 331.583C854.206 332.033 809.496 349.903 782.166 340.803C754.476 331.573 730.746 296.633 706.356 284.773C681.966 272.903 667.466 257.083 634.506 274.223L656.226 223.013L662.176 208.983L662.186 208.963C662.186 208.963 669.446 112.723 683.286 106.133C697.126 99.5328 688.556 82.4028 714.266 79.1028C714.266 79.1028 682.626 75.1428 676.696 96.9028C670.756 118.653 629.886 235.993 629.886 235.993C629.886 235.993 604.846 286.083 577.156 274.223C549.466 262.353 587.706 195.783 587.706 195.783L635.166 174.023C635.166 174.023 599.566 172.703 577.816 193.143C556.066 213.573 554.746 279.493 554.746 279.493C554.746 279.493 500.036 287.403 486.846 317.073C486.846 317.073 478.276 290.703 494.756 274.883C498.876 270.923 503.206 264.043 507.376 255.953C523.183 224.902 528.896 189.689 523.716 155.233C521.266 138.373 519.756 121.883 522.446 117.993C528.376 109.423 553.426 56.6928 555.406 42.8428C557.376 29.0028 553.426 0.00283813 553.426 0.00283813C553.426 0.00283813 552.766 35.5928 544.856 46.8028C536.946 58.0128 514.536 113.383 514.536 113.383C514.536 113.383 514.536 183.253 496.076 217.533C477.616 251.813 442.026 290.043 443.996 315.093V329.593C443.996 329.593 404.446 292.023 407.086 279.493C409.726 266.973 413.016 237.303 438.066 219.513C463.116 201.713 479.596 173.363 461.796 132.493C451.786 109.503 447.406 97.1528 445.486 90.7428L455.866 135.133C455.866 135.133 462.456 180.613 443.996 196.433C443.946 196.473 443.906 196.513 443.856 196.553C425.426 212.393 401.156 241.263 401.156 241.263L401.226 239.993L406.426 146.343L405.286 148.843L397.066 166.863L389.286 183.913C389.286 183.913 352.376 136.453 308.866 120.633C265.366 104.813 238.336 49.4428 238.336 49.4428L201.416 20.4328L231.746 56.6928C231.746 56.6928 240.976 99.5328 293.046 129.863C345.126 160.183 378.736 205.003 380.716 232.693C382.696 260.383 384.676 284.773 384.676 284.773C384.676 284.773 287.116 281.473 265.366 238.623C243.606 195.783 225.806 193.803 225.806 193.803L238.336 230.713L252.176 262.353C252.176 262.353 195.486 263.673 165.826 297.293C136.156 330.913 62.336 340.803 62.336 340.803L103.856 352.003C103.856 352.003 143.416 338.823 180.986 314.433C218.556 290.043 214.606 268.293 261.406 292.683Z" fill="#3F3D56"/>
+                  <g id="Low-Leaves-01">
+                     <path id="Vector_6" d="M70.8016 641.138C80.6326 656.214 77.9389 675.389 77.9389 675.389C77.9389 675.389 59.3061 670.121 49.4751 655.044C39.6441 639.968 42.3378 620.793 42.3378 620.793C42.3378 620.793 60.9707 626.062 70.8016 641.138Z" fill="#0b5351"/>
+                     <path id="Vector_7" d="M63.417 643.803C64.1941 661.785 77.5422 675.812 77.5422 675.812C77.5422 675.812 89.6304 660.686 88.8534 642.704C88.0763 624.722 74.7282 610.695 74.7282 610.695C74.7282 610.695 62.64 625.822 63.417 643.803Z" fill="#00BFA6"/>
+                  </g>
+                  <g id="Low-Leaves-02">
+                     <path id="Vector_4" d="M366.802 641.138C376.633 656.214 373.939 675.389 373.939 675.389C373.939 675.389 355.306 670.121 345.475 655.044C335.644 639.968 338.338 620.793 338.338 620.793C338.338 620.793 356.971 626.062 366.802 641.138Z" fill="#0b5351"/>
+                     <path id="Vector_5" d="M359.417 643.803C360.194 661.785 373.542 675.812 373.542 675.812C373.542 675.812 385.63 660.686 384.853 642.704C384.076 624.722 370.728 610.695 370.728 610.695C370.728 610.695 358.64 625.822 359.417 643.803Z" fill="#00BFA6"/>
+                  </g>
+                  <g id="Low-Leaves-03">
+                     <path id="Vector_2" d="M528.591 646.841C523.891 664.215 507.792 674.975 507.792 674.975C507.792 674.975 499.314 657.566 504.014 640.192C508.714 622.819 524.812 612.058 524.812 612.058C524.812 612.058 533.291 629.467 528.591 646.841Z" fill="#0b5351"/>
+                     <path id="Vector_3" d="M521.684 643.107C508.788 655.661 507.212 674.961 507.212 674.961C507.212 674.961 526.547 673.905 539.444 661.35C552.34 648.796 553.916 629.497 553.916 629.497C553.916 629.497 534.581 630.552 521.684 643.107Z" fill="#00BFA6"/>
+                  </g>
+               </g>
+               <defs>
+                  <clipPath id="clip0">
+                  <rect width="855.316" height="676.006" fill="white" transform="matrix(-1 0 0 1 855.316 0)"/>
+                  </clipPath>
+               </defs>
+            </svg>
+         </div>
       </div>
+   </div>
 
-   </main>
 
-   
-   <!-- ===== Aside ==== -->
-   <aside>
-      <div id="Btn-Music"></div>
-      <iframe src="https://open.spotify.com/embed?uri=spotify:playlist:3yAUvjuiSNv1qoMD5F3Bt5" width="350" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-   </aside>
-
-   
    <!-- ===== Footer (Authors (Us) and links to Social Networks) ==== -->
    <footer>
-      <hgroup class="MoreInfo">
-			<h5>&copy; 2021 StudyWeb</h5>
-		</hgroup>
+      <h5>© StudyWeb 2021. All rigths reserved</h5>
    </footer>
 
    
-   <!-- JS Files -->
-   <script src="JS/particles.min.js"></script>
-   <script src="JS/Run-Particlesjs-Settings.js"></script>
-   <script src="JS/scrollreveal.min.js"></script>
-   <script src="JS/Main.js"></script>
+   <!-- JS Particles -->
+   <script src="JS/Particles.min.js"></script>
+   <script src="JS/Run-Particles-Settings.js"></script>
+   
+   <!-- JS ScrollReveal -->
+   <script src="JS/ScrollReveal.min.js"></script>
+   <script src="JS/Run-ScrollReveal-Settings.js"></script>
+   
+   <!-- JS DarkMode -->
+   <script src="JS/DarkMode.js"></script>
+   
+   <!-- JS ActiveLink -->
+   <script src="JS/ActiveLinks.js"></script>
    
 </body>
 

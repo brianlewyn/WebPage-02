@@ -1,0 +1,150 @@
+// [Sass]:[Text]:[Config-Main]
+@import "A00-Variables.scss";
+
+
+/* ================== NavBar ================== */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   font-size: 62.5%; /* [62.5] == [10px] */
+}
+
+/* ==== Scrollbar ==== */
+::-webkit-scrollbar {
+   width: 1.2rem;
+}
+::-webkit-scrollbar-thumb {
+   background: $LinkDark;
+   border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+   background: $ShadowDark;
+   box-shadow: inset 2px 2px 2px 0 hsla(0, 0%, 96%, .20);
+}
+
+
+/* ========== ParticlesJS ========== */
+body {
+   background: $ConfigMain;
+}
+#Dark {
+   background: $ConfigDark;
+}
+#particles-js {
+   height: 100vh;
+   width: 100vw;
+   position: fixed;
+   z-index: -1;
+}
+
+
+/* ========== NavBar ========== */
+header.NavBar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   
+   height: $NavBar;
+   width: 100%;
+   padding: 0 3.5rem;
+   
+   display: flex;
+	align-items: center;
+	justify-content: space-between;
+   
+   background: $ConfigMain;
+   box-shadow: 0px 0px 10px 0px rgba(0,0,0,.3);
+   z-index: 500;
+}
+#Dark header.NavBar {
+   background: $ConfigDark;
+   box-shadow: 0px 0px 10px 0px rgb(0,0,0);
+}
+
+
+/* Logo[+] */
+.NavBar__Logo {
+   height: 100%;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+.Logo-SVG {
+   width: 4.2rem;
+}
+.Page-Title {
+   font-family: 'Fredoka One', 'Poppins';
+   font-size: size(2.6);
+   letter-spacing: 1px;
+   color: $PrimaryMain;
+   margin-left: 0.5rem;
+}
+#Dark .Page-Title {
+   color: $PrimaryDark;
+}
+
+
+/* Navigation[+] */
+nav.NavBar__Links {
+   height: 4rem;
+   width: 20rem;
+   // width: auto;
+   // background: blue;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   a {
+      // display: none;
+      font-size: size(2);
+      font-weight: 400;
+      text-decoration: none;
+      color: $SecondaryMain;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+         color: $LinkMain;
+         border-bottom: 2px solid $LinkMain;
+      }
+   }
+}
+#Dark .NavBar__Links {
+   a {
+      color: $SecondaryDark;
+
+      &:hover {
+         color: $LinkDark;
+         border-bottom: 2px solid $LinkDark;
+      }
+   }
+}
+
+/* Naviagtion[+] → IconBtn[+]  */
+#BtnDark {
+   font-size: size(2.2);
+   color: $SecondaryDark;
+   margin: 0.4rem;
+   padding: 0.4rem;
+   border-radius: 50%;
+   background: $ShadowDark;
+   cursor: pointer;
+
+   &:hover {
+      color: $LinkDark;
+   }
+}
+#Dark #BtnDark:hover {
+   color: $LinkDark;
+}
+
+
+
+/* Special mode for text */
+.Glass {
+   background: $WhiteGlass;
+}
+#Dark .Glass {
+   background: $DarkGlass;
+}

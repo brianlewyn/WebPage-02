@@ -1,0 +1,98 @@
+// [Sass]:[Text]:[Config-Main]
+@import "A00-Variables.scss";
+
+
+/* ========== [Menu] ========== */
+aside.Menu {
+   position: sticky;
+   top: $NavBar;
+   left: 0;
+   
+   height: $Menu-Y;
+   width: $Menu-X;
+   padding: 2rem;   
+   
+   overflow: auto;
+
+   div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+   }
+
+   h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      font-size: size(2);
+      color: $TerciaryMain;
+      margin-bottom: 0.8rem;
+   }
+}
+#Dark .Menu h4 { color: $PrimaryDark; }
+
+
+/* [+] */
+.Menu-Links {
+   height: 100%;
+   width: 100%;
+   list-style: none;
+
+   ul, ol {/* For Each One */
+      margin-left: 2rem;
+   }
+
+   li {/* For Symbol */
+      font-size: size(1.6);
+      color: $PrimaryMain;
+   }
+
+   a {/* For All Link */
+      font-size: size(1.6);
+      font-weight: 300;
+      color: $PrimaryMain;
+      text-decoration: none;
+   }
+
+   > li > a {/* First List → First Items */
+      font-weight: 500;
+   }
+
+   .SecondSubList {
+      list-style: disc;
+
+      a {
+         font-weight: 400;
+      }
+   }
+   
+   .ThirdSubList a {
+      font-weight: 300;
+      list-style: decimal;
+   }
+
+   a:hover {
+      color: $LinkMain;
+      text-decoration: underline;
+   }
+
+   a.Active-Link {
+      color: $LinkMain;
+      font-weight: 500;
+   }
+}
+
+
+#Dark .Menu-Links {
+   // For Symbol
+   li {color: $PrimaryDark;}
+
+   // For All Link
+   a {color: $PrimaryDark;}
+
+   a:hover {color: $LinkDark;}
+
+   a.Active-Link {
+      color: $LinkDark;
+      font-weight: 500;
+   }
+}

@@ -1,0 +1,31 @@
+/* ================== div Grid-[Video] ================== */
+div.Grid-Container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30rem 1fr;
+      grid-template-columns: 30rem 1fr;
+  -ms-grid-rows: 100vh calc(100vh - 5.5rem) 1fr;
+      grid-template-rows: 100vh calc(100vh - 5.5rem) 1fr;
+      grid-template-areas: "Home   Home" "Aside  Main" ".      Main";
+}
+
+div#Home {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: Home;
+}
+
+aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Aside;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: Main;
+}
